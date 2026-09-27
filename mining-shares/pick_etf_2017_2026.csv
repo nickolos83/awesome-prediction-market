@@ -1,0 +1,11 @@
+ticker,company,currency,year,last_trading_day,open,high,low,close,average_close,dividends_in_year,dividend_yield,rate_2y,forward_2y_price,forward_for_year,actual_close_in_forward_year,forward_error
+PICK,iShares MSCI Global Metals & Mining Producers ETF,USD,2017,2017-12-29,26.18,35.0,25.02,34.63,29.5293,0.835,0.0241,0.0189,34.2709,2019,29.73,-0.1325
+PICK,iShares MSCI Global Metals & Mining Producers ETF,USD,2018,2018-12-31,35.2,37.91,26.0,26.98,32.7918,1.286,0.0477,0.0249,25.7791,2020,36.85,0.4294
+PICK,iShares MSCI Global Metals & Mining Producers ETF,USD,2019,2019-12-31,26.35,32.97,24.51,29.73,28.846,1.638,0.0551,0.0158,27.4829,2021,42.62,0.5508
+PICK,iShares MSCI Global Metals & Mining Producers ETF,USD,2020,2020-12-31,30.13,37.28,16.01,36.85,26.504,0.836,0.0227,0.0013,35.307,2022,41.0,0.1612
+PICK,iShares MSCI Global Metals & Mining Producers ETF,USD,2021,2021-12-31,38.04,52.39,36.36,42.62,43.5231,2.51,0.0589,0.0073,38.4415,2023,43.07,0.1204
+PICK,iShares MSCI Global Metals & Mining Producers ETF,USD,2022,2022-12-30,42.56,53.0,31.86,41.0,41.4933,2.843,0.0693,0.0443,38.9972,2024,34.99,-0.1028
+PICK,iShares MSCI Global Metals & Mining Producers ETF,USD,2023,2023-12-29,41.39,47.7,36.21,43.07,41.2161,1.806,0.0419,0.0425,43.119,2025,51.34,0.1907
+PICK,iShares MSCI Global Metals & Mining Producers ETF,USD,2024,2024-12-31,42.86,46.4,34.78,34.99,40.5666,1.139,0.0326,0.0424,35.686,2026,61.14,0.7133
+PICK,iShares MSCI Global Metals & Mining Producers ETF,USD,2025,2025-12-31,35.14,52.42,29.96,51.34,40.1501,1.476,0.0287,0.0348,51.965,2027,,
+PICK,iShares MSCI Global Metals & Mining Producers ETF,USD,2026,2026-09-25,52.25,69.02,51.48,61.14,60.7002,0.542,0.0089,0.0348,64.395,2028,,
