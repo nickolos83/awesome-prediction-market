@@ -1,100 +1,215 @@
-ticker,source,fiscal_year_end,revenue,currency,form,filed,tag
-AEM,yahoo,2025-12-31,11907851000.0,USD,,,Total Revenue
-AEM,yahoo,2024-12-31,8285753000.0,USD,,,Total Revenue
-AEM,yahoo,2023-12-31,6626909000.0,USD,,,Total Revenue
-AEM,yahoo,2022-12-31,5741162000.0,USD,,,Total Revenue
-AAL.L,yahoo,2025-12-31,18546000000.0,USD,,,Total Revenue
-AAL.L,yahoo,2024-12-31,17745000000.0,USD,,,Total Revenue
-AAL.L,yahoo,2023-12-31,30652000000.0,USD,,,Total Revenue
-AAL.L,yahoo,2022-12-31,35118000000.0,USD,,,Total Revenue
-MT,yahoo,2025-12-31,61352000000.0,USD,,,Total Revenue
-MT,yahoo,2024-12-31,62441000000.0,USD,,,Total Revenue
-MT,yahoo,2023-12-31,68275000000.0,USD,,,Total Revenue
-MT,yahoo,2022-12-31,79844000000.0,USD,,,Total Revenue
-GMEXICOB.MX,yahoo,2025-12-31,18176711000.0,USD,,,Total Revenue
-GMEXICOB.MX,yahoo,2024-12-31,16169447000.0,USD,,,Total Revenue
-GMEXICOB.MX,yahoo,2023-12-31,14366895000.0,USD,,,Total Revenue
-GMEXICOB.MX,yahoo,2022-12-31,13870314000.0,USD,,,Total Revenue
-B,yahoo,2025-12-31,16956000000.0,USD,,,Total Revenue
-B,yahoo,2024-12-31,12922000000.0,USD,,,Total Revenue
-B,yahoo,2023-12-31,11397000000.0,USD,,,Total Revenue
-B,yahoo,2022-12-31,11013000000.0,USD,,,Total Revenue
-BHP.AX,yahoo,2026-06-30,58760000000.0,USD,,,Total Revenue
-BHP.AX,yahoo,2025-06-30,51262000000.0,USD,,,Total Revenue
-BHP.AX,yahoo,2024-06-30,55658000000.0,USD,,,Total Revenue
-BHP.AX,yahoo,2023-06-30,53817000000.0,USD,,,Total Revenue
-EVN.AX,yahoo,2024-06-30,3303975000.0,AUD,,,Total Revenue
-EVN.AX,yahoo,2023-06-30,2285877000.0,AUD,,,Total Revenue
-EVN.AX,yahoo,2022-06-30,2064928000.0,AUD,,,Total Revenue
-FMG.AX,yahoo,2026-06-30,16835000000.0,USD,,,Total Revenue
-FMG.AX,yahoo,2025-06-30,15420000000.0,USD,,,Total Revenue
-FMG.AX,yahoo,2024-06-30,18109000000.0,USD,,,Total Revenue
-FMG.AX,yahoo,2023-06-30,16780000000.0,USD,,,Total Revenue
-FCX,yahoo,2025-12-31,25915000000.0,USD,,,Total Revenue
-FCX,yahoo,2024-12-31,25455000000.0,USD,,,Total Revenue
-FCX,yahoo,2023-12-31,22855000000.0,USD,,,Total Revenue
-FCX,yahoo,2022-12-31,22780000000.0,USD,,,Total Revenue
-FRES.L,yahoo,2025-12-31,4561231000.0,USD,,,Total Revenue
-FRES.L,yahoo,2024-12-31,3496385000.0,USD,,,Total Revenue
-FRES.L,yahoo,2023-12-31,2705086000.0,USD,,,Total Revenue
-FRES.L,yahoo,2022-12-31,2432990000.0,USD,,,Total Revenue
-EQX,yahoo,2025-12-31,1817195000.0,USD,,,Total Revenue
-EQX,yahoo,2024-12-31,912840000.0,USD,,,Total Revenue
-EQX,yahoo,2023-12-31,1088191000.0,USD,,,Total Revenue
-EQX,yahoo,2022-12-31,952196000.0,USD,,,Total Revenue
-SCCO,yahoo,2025-12-31,13420000000.0,USD,,,Total Revenue
-SCCO,yahoo,2024-12-31,11433400000.0,USD,,,Total Revenue
-SCCO,yahoo,2023-12-31,9895800000.0,USD,,,Total Revenue
-SCCO,yahoo,2022-12-31,10047900000.0,USD,,,Total Revenue
-LUN.TO,yahoo,2025-12-31,4053200000.0,USD,,,Total Revenue
-LUN.TO,yahoo,2024-12-31,3270100000.0,USD,,,Total Revenue
-LUN.TO,yahoo,2023-12-31,2743444000.0,USD,,,Total Revenue
-LUN.TO,yahoo,2022-12-31,3041228000.0,USD,,,Total Revenue
-1211.SR,yahoo,2025-12-31,38577730228.0,SAR,,,Total Revenue
-1211.SR,yahoo,2024-12-31,32546157340.0,SAR,,,Total Revenue
-1211.SR,yahoo,2023-12-31,29271927826.0,SAR,,,Total Revenue
-1211.SR,yahoo,2022-12-31,40277122289.0,SAR,,,Total Revenue
-GLEN.L,yahoo,2025-12-31,247535000000.0,USD,,,Total Revenue
-GLEN.L,yahoo,2024-12-31,230944000000.0,USD,,,Total Revenue
-GLEN.L,yahoo,2023-12-31,217829000000.0,USD,,,Total Revenue
-GLEN.L,yahoo,2022-12-31,255984000000.0,USD,,,Total Revenue
-MIN.AX,yahoo,2026-06-30,6461000000.0,AUD,,,Total Revenue
-MIN.AX,yahoo,2024-06-30,5259000000.0,AUD,,,Total Revenue
-MIN.AX,yahoo,2023-06-30,4779100000.0,AUD,,,Total Revenue
-MIN.AX,yahoo,2022-06-30,3418000000.0,AUD,,,Total Revenue
-1208.HK,yahoo,2025-12-31,6218000000.0,USD,,,Total Revenue
-1208.HK,yahoo,2024-12-31,4479200000.0,USD,,,Total Revenue
-1208.HK,yahoo,2023-12-31,4346500000.0,USD,,,Total Revenue
-1208.HK,yahoo,2022-12-31,3254200000.0,USD,,,Total Revenue
-NEM,yahoo,2025-12-31,22669000000.0,USD,,,Total Revenue
-NEM,yahoo,2024-12-31,18682000000.0,USD,,,Total Revenue
-NEM,yahoo,2023-12-31,11812000000.0,USD,,,Total Revenue
-NEM,yahoo,2022-12-31,11915000000.0,USD,,,Total Revenue
-NEXA,yahoo,2025-12-31,3002055000.0,USD,,,Total Revenue
-NEXA,yahoo,2024-12-31,2766481000.0,USD,,,Total Revenue
-NEXA,yahoo,2023-12-31,2573233000.0,USD,,,Total Revenue
-NEXA,yahoo,2022-12-31,3033990000.0,USD,,,Total Revenue
-NST.AX,yahoo,2026-06-30,7623100000.0,AUD,,,Total Revenue
-NST.AX,yahoo,2025-06-30,6414900000.0,AUD,,,Total Revenue
-NST.AX,yahoo,2024-06-30,4921200000.0,AUD,,,Total Revenue
-NST.AX,yahoo,2023-06-30,4131100000.0,AUD,,,Total Revenue
-INCO.JK,yahoo,2025-12-31,990195000.0,USD,,,Total Revenue
-INCO.JK,yahoo,2024-12-31,950388000.0,USD,,,Total Revenue
-INCO.JK,yahoo,2023-12-31,1232263000.0,USD,,,Total Revenue
-INCO.JK,yahoo,2022-12-31,1179452000.0,USD,,,Total Revenue
-RIO.L,yahoo,2025-12-31,57638000000.0,USD,,,Total Revenue
-RIO.L,yahoo,2024-12-31,53658000000.0,USD,,,Total Revenue
-RIO.L,yahoo,2023-12-31,54041000000.0,USD,,,Total Revenue
-RIO.L,yahoo,2022-12-31,55554000000.0,USD,,,Total Revenue
-VALE3.SA,yahoo,2025-12-31,38403000000.0,BRL,,,Total Revenue
-VALE3.SA,yahoo,2024-12-31,38056000000.0,BRL,,,Total Revenue
-VALE3.SA,yahoo,2023-12-31,41784000000.0,BRL,,,Total Revenue
-VALE3.SA,yahoo,2022-12-31,43839000000.0,BRL,,,Total Revenue
-000408.SZ,yahoo,2025-12-31,3576752605.97,CNY,,,Total Revenue
-000408.SZ,yahoo,2024-12-31,3250800389.88,CNY,,,Total Revenue
-000408.SZ,yahoo,2023-12-31,5225721163.41,CNY,,,Total Revenue
-000408.SZ,yahoo,2022-12-31,8193913458.11,CNY,,,Total Revenue
-2899.HK,yahoo,2025-12-31,349079082852.0,CNY,,,Total Revenue
-2899.HK,yahoo,2024-12-31,303639957153.0,CNY,,,Total Revenue
-2899.HK,yahoo,2023-12-31,293403242878.0,CNY,,,Total Revenue
-2899.HK,yahoo,2022-12-31,270328998459.0,CNY,,,Total Revenue
+ticker,source,fiscal_year_end,revenue,currency,url
+AEM,stockanalysis,2025-12-31,11907851000.0,USD,https://stockanalysis.com/stocks/aem/financials/
+AEM,stockanalysis,2024-12-31,8285753000.000001,USD,https://stockanalysis.com/stocks/aem/financials/
+AEM,stockanalysis,2023-12-31,6626909000.0,USD,https://stockanalysis.com/stocks/aem/financials/
+AEM,stockanalysis,2022-12-31,5741162000.0,USD,https://stockanalysis.com/stocks/aem/financials/
+AEM,stockanalysis,2021-12-31,3869625000.0,USD,https://stockanalysis.com/stocks/aem/financials/
+AEM,yahoo,2025-12-31,11907851000.0,USD,
+AEM,yahoo,2024-12-31,8285753000.0,USD,
+AEM,yahoo,2023-12-31,6626909000.0,USD,
+AEM,yahoo,2022-12-31,5741162000.0,USD,
+AAL.L,stockanalysis,2025-12-31,18546000000.0,USD,https://stockanalysis.com/quote/lon/AAL/financials/
+AAL.L,stockanalysis,2024-12-31,17745000000.0,USD,https://stockanalysis.com/quote/lon/AAL/financials/
+AAL.L,stockanalysis,2023-12-31,30652000000.0,USD,https://stockanalysis.com/quote/lon/AAL/financials/
+AAL.L,stockanalysis,2022-12-31,35118000000.0,USD,https://stockanalysis.com/quote/lon/AAL/financials/
+AAL.L,stockanalysis,2021-12-31,41554000000.0,USD,https://stockanalysis.com/quote/lon/AAL/financials/
+AAL.L,yahoo,2025-12-31,18546000000.0,USD,
+AAL.L,yahoo,2024-12-31,17745000000.0,USD,
+AAL.L,yahoo,2023-12-31,30652000000.0,USD,
+AAL.L,yahoo,2022-12-31,35118000000.0,USD,
+MT,stockanalysis,2025-12-31,61352000000.0,USD,https://stockanalysis.com/stocks/mt/financials/
+MT,stockanalysis,2024-12-31,62441000000.0,USD,https://stockanalysis.com/stocks/mt/financials/
+MT,stockanalysis,2023-12-31,68275000000.0,USD,https://stockanalysis.com/stocks/mt/financials/
+MT,stockanalysis,2022-12-31,79844000000.0,USD,https://stockanalysis.com/stocks/mt/financials/
+MT,stockanalysis,2021-12-31,76571000000.0,USD,https://stockanalysis.com/stocks/mt/financials/
+MT,yahoo,2025-12-31,61352000000.0,USD,
+MT,yahoo,2024-12-31,62441000000.0,USD,
+MT,yahoo,2023-12-31,68275000000.0,USD,
+MT,yahoo,2022-12-31,79844000000.0,USD,
+GMEXICOB.MX,yahoo,2025-12-31,18176711000.0,USD,
+GMEXICOB.MX,yahoo,2024-12-31,16169447000.0,USD,
+GMEXICOB.MX,yahoo,2023-12-31,14366895000.0,USD,
+GMEXICOB.MX,yahoo,2022-12-31,13870314000.0,USD,
+B,stockanalysis,2025-12-31,16956000000.0,USD,https://stockanalysis.com/stocks/b/financials/
+B,stockanalysis,2024-12-31,12922000000.0,USD,https://stockanalysis.com/stocks/b/financials/
+B,stockanalysis,2023-12-31,11397000000.0,USD,https://stockanalysis.com/stocks/b/financials/
+B,stockanalysis,2022-12-31,11013000000.0,USD,https://stockanalysis.com/stocks/b/financials/
+B,stockanalysis,2021-12-31,11985000000.0,USD,https://stockanalysis.com/stocks/b/financials/
+B,yahoo,2025-12-31,16956000000.0,USD,
+B,yahoo,2024-12-31,12922000000.0,USD,
+B,yahoo,2023-12-31,11397000000.0,USD,
+B,yahoo,2022-12-31,11013000000.0,USD,
+BHP.AX,stockanalysis,2026-06-30,58760000000.0,USD,https://stockanalysis.com/quote/asx/BHP/financials/
+BHP.AX,stockanalysis,2025-06-30,51262000000.0,USD,https://stockanalysis.com/quote/asx/BHP/financials/
+BHP.AX,stockanalysis,2024-06-30,55658000000.0,USD,https://stockanalysis.com/quote/asx/BHP/financials/
+BHP.AX,stockanalysis,2023-06-30,53817000000.0,USD,https://stockanalysis.com/quote/asx/BHP/financials/
+BHP.AX,stockanalysis,2022-06-30,65098000000.0,USD,https://stockanalysis.com/quote/asx/BHP/financials/
+BHP.AX,yahoo,2026-06-30,58760000000.0,USD,
+BHP.AX,yahoo,2025-06-30,51262000000.0,USD,
+BHP.AX,yahoo,2024-06-30,55658000000.0,USD,
+BHP.AX,yahoo,2023-06-30,53817000000.0,USD,
+EVN.AX,stockanalysis,2026-06-30,5558774000.0,AUD,https://stockanalysis.com/quote/asx/EVN/financials/
+EVN.AX,stockanalysis,2025-06-30,4351475000.0,AUD,https://stockanalysis.com/quote/asx/EVN/financials/
+EVN.AX,stockanalysis,2024-06-30,3215832000.0,AUD,https://stockanalysis.com/quote/asx/EVN/financials/
+EVN.AX,stockanalysis,2023-06-30,2226931000.0,AUD,https://stockanalysis.com/quote/asx/EVN/financials/
+EVN.AX,stockanalysis,2022-06-30,2064928000.0,AUD,https://stockanalysis.com/quote/asx/EVN/financials/
+EVN.AX,yahoo,2024-06-30,3303975000.0,AUD,
+EVN.AX,yahoo,2023-06-30,2285877000.0,AUD,
+EVN.AX,yahoo,2022-06-30,2064928000.0,AUD,
+FMG.AX,stockanalysis,2026-06-30,16966000000.0,USD,https://stockanalysis.com/quote/asx/FMG/financials/
+FMG.AX,stockanalysis,2025-06-30,15541000000.0,USD,https://stockanalysis.com/quote/asx/FMG/financials/
+FMG.AX,stockanalysis,2024-06-30,18220000000.0,USD,https://stockanalysis.com/quote/asx/FMG/financials/
+FMG.AX,stockanalysis,2023-06-30,16871000000.0,USD,https://stockanalysis.com/quote/asx/FMG/financials/
+FMG.AX,stockanalysis,2022-06-30,17390000000.0,USD,https://stockanalysis.com/quote/asx/FMG/financials/
+FMG.AX,yahoo,2026-06-30,16835000000.0,USD,
+FMG.AX,yahoo,2025-06-30,15420000000.0,USD,
+FMG.AX,yahoo,2024-06-30,18109000000.0,USD,
+FMG.AX,yahoo,2023-06-30,16780000000.0,USD,
+FCX,stockanalysis,2025-12-31,25915000000.0,USD,https://stockanalysis.com/stocks/fcx/financials/
+FCX,stockanalysis,2024-12-31,25455000000.0,USD,https://stockanalysis.com/stocks/fcx/financials/
+FCX,stockanalysis,2023-12-31,22855000000.0,USD,https://stockanalysis.com/stocks/fcx/financials/
+FCX,stockanalysis,2022-12-31,22780000000.0,USD,https://stockanalysis.com/stocks/fcx/financials/
+FCX,stockanalysis,2021-12-31,22845000000.0,USD,https://stockanalysis.com/stocks/fcx/financials/
+FCX,yahoo,2025-12-31,25915000000.0,USD,
+FCX,yahoo,2024-12-31,25455000000.0,USD,
+FCX,yahoo,2023-12-31,22855000000.0,USD,
+FCX,yahoo,2022-12-31,22780000000.0,USD,
+FRES.L,stockanalysis,2025-12-31,4561231000.0,USD,https://stockanalysis.com/quote/lon/FRES/financials/
+FRES.L,stockanalysis,2024-12-31,3496385000.0,USD,https://stockanalysis.com/quote/lon/FRES/financials/
+FRES.L,stockanalysis,2023-12-31,2705086000.0,USD,https://stockanalysis.com/quote/lon/FRES/financials/
+FRES.L,stockanalysis,2022-12-31,2432990000.0,USD,https://stockanalysis.com/quote/lon/FRES/financials/
+FRES.L,stockanalysis,2021-12-31,2703095000.0,USD,https://stockanalysis.com/quote/lon/FRES/financials/
+FRES.L,yahoo,2025-12-31,4561231000.0,USD,
+FRES.L,yahoo,2024-12-31,3496385000.0,USD,
+FRES.L,yahoo,2023-12-31,2705086000.0,USD,
+FRES.L,yahoo,2022-12-31,2432990000.0,USD,
+EQX,stockanalysis,2025-12-31,1817195000.0,USD,https://stockanalysis.com/stocks/eqx/financials/
+EQX,stockanalysis,2024-12-31,912840000.0,USD,https://stockanalysis.com/stocks/eqx/financials/
+EQX,stockanalysis,2023-12-31,1088191000.0,USD,https://stockanalysis.com/stocks/eqx/financials/
+EQX,stockanalysis,2022-12-31,952196000.0,USD,https://stockanalysis.com/stocks/eqx/financials/
+EQX,stockanalysis,2021-12-31,1082286000.0,USD,https://stockanalysis.com/stocks/eqx/financials/
+EQX,yahoo,2025-12-31,1817195000.0,USD,
+EQX,yahoo,2024-12-31,912840000.0,USD,
+EQX,yahoo,2023-12-31,1088191000.0,USD,
+EQX,yahoo,2022-12-31,952196000.0,USD,
+SCCO,stockanalysis,2025-12-31,13420000000.0,USD,https://stockanalysis.com/stocks/scco/financials/
+SCCO,stockanalysis,2024-12-31,11433400000.0,USD,https://stockanalysis.com/stocks/scco/financials/
+SCCO,stockanalysis,2023-12-31,9895800000.0,USD,https://stockanalysis.com/stocks/scco/financials/
+SCCO,stockanalysis,2022-12-31,10047900000.0,USD,https://stockanalysis.com/stocks/scco/financials/
+SCCO,stockanalysis,2021-12-31,10934100000.0,USD,https://stockanalysis.com/stocks/scco/financials/
+SCCO,yahoo,2025-12-31,13420000000.0,USD,
+SCCO,yahoo,2024-12-31,11433400000.0,USD,
+SCCO,yahoo,2023-12-31,9895800000.0,USD,
+SCCO,yahoo,2022-12-31,10047900000.0,USD,
+LUN.TO,stockanalysis,2025-12-31,4053200000.0,USD,https://stockanalysis.com/quote/tsx/LUN/financials/
+LUN.TO,stockanalysis,2024-12-31,3270100000.0,USD,https://stockanalysis.com/quote/tsx/LUN/financials/
+LUN.TO,stockanalysis,2023-12-31,2743444000.0,USD,https://stockanalysis.com/quote/tsx/LUN/financials/
+LUN.TO,stockanalysis,2022-12-31,3041228000.0,USD,https://stockanalysis.com/quote/tsx/LUN/financials/
+LUN.TO,stockanalysis,2021-12-31,3328765000.0,USD,https://stockanalysis.com/quote/tsx/LUN/financials/
+LUN.TO,yahoo,2025-12-31,4053200000.0,USD,
+LUN.TO,yahoo,2024-12-31,3270100000.0,USD,
+LUN.TO,yahoo,2023-12-31,2743444000.0,USD,
+LUN.TO,yahoo,2022-12-31,3041228000.0,USD,
+1211.SR,stockanalysis,2025-12-31,38577730228.0,SAR,https://stockanalysis.com/quote/tadawul/1211/financials/
+1211.SR,stockanalysis,2024-12-31,32546157340.0,SAR,https://stockanalysis.com/quote/tadawul/1211/financials/
+1211.SR,stockanalysis,2023-12-31,29271927826.0,SAR,https://stockanalysis.com/quote/tadawul/1211/financials/
+1211.SR,stockanalysis,2022-12-31,40277122289.0,SAR,https://stockanalysis.com/quote/tadawul/1211/financials/
+1211.SR,stockanalysis,2021-12-31,26769006109.0,SAR,https://stockanalysis.com/quote/tadawul/1211/financials/
+1211.SR,yahoo,2025-12-31,38577730228.0,SAR,
+1211.SR,yahoo,2024-12-31,32546157340.0,SAR,
+1211.SR,yahoo,2023-12-31,29271927826.0,SAR,
+1211.SR,yahoo,2022-12-31,40277122289.0,SAR,
+GLEN.L,stockanalysis,2025-12-31,247535000000.0,USD,https://stockanalysis.com/quote/lon/GLEN/financials/
+GLEN.L,stockanalysis,2024-12-31,230944000000.0,USD,https://stockanalysis.com/quote/lon/GLEN/financials/
+GLEN.L,stockanalysis,2023-12-31,217829000000.0,USD,https://stockanalysis.com/quote/lon/GLEN/financials/
+GLEN.L,stockanalysis,2022-12-31,255984000000.0,USD,https://stockanalysis.com/quote/lon/GLEN/financials/
+GLEN.L,stockanalysis,2021-12-31,203751000000.0,USD,https://stockanalysis.com/quote/lon/GLEN/financials/
+GLEN.L,yahoo,2025-12-31,247535000000.0,USD,
+GLEN.L,yahoo,2024-12-31,230944000000.0,USD,
+GLEN.L,yahoo,2023-12-31,217829000000.0,USD,
+GLEN.L,yahoo,2022-12-31,255984000000.0,USD,
+MIN.AX,stockanalysis,2026-06-30,6461000000.0,AUD,https://stockanalysis.com/quote/asx/MIN/financials/
+MIN.AX,stockanalysis,2025-06-30,4472000000.0,AUD,https://stockanalysis.com/quote/asx/MIN/financials/
+MIN.AX,stockanalysis,2024-06-30,5278000000.0,AUD,https://stockanalysis.com/quote/asx/MIN/financials/
+MIN.AX,stockanalysis,2023-06-30,4779000000.0,AUD,https://stockanalysis.com/quote/asx/MIN/financials/
+MIN.AX,stockanalysis,2022-06-30,3418000000.0,AUD,https://stockanalysis.com/quote/asx/MIN/financials/
+MIN.AX,yahoo,2026-06-30,6461000000.0,AUD,
+MIN.AX,yahoo,2024-06-30,5259000000.0,AUD,
+MIN.AX,yahoo,2023-06-30,4779100000.0,AUD,
+MIN.AX,yahoo,2022-06-30,3418000000.0,AUD,
+1208.HK,stockanalysis,2025-12-31,6218000000.0,USD,https://stockanalysis.com/quote/hkg/1208/financials/
+1208.HK,stockanalysis,2024-12-31,4479200000.0,USD,https://stockanalysis.com/quote/hkg/1208/financials/
+1208.HK,stockanalysis,2023-12-31,4346500000.0,USD,https://stockanalysis.com/quote/hkg/1208/financials/
+1208.HK,stockanalysis,2022-12-31,3254200000.0,USD,https://stockanalysis.com/quote/hkg/1208/financials/
+1208.HK,stockanalysis,2021-12-31,4252700000.0,USD,https://stockanalysis.com/quote/hkg/1208/financials/
+1208.HK,yahoo,2025-12-31,6218000000.0,USD,
+1208.HK,yahoo,2024-12-31,4479200000.0,USD,
+1208.HK,yahoo,2023-12-31,4346500000.0,USD,
+1208.HK,yahoo,2022-12-31,3254200000.0,USD,
+NEM,stockanalysis,2025-12-31,22669000000.0,USD,https://stockanalysis.com/stocks/nem/financials/
+NEM,stockanalysis,2024-12-31,18682000000.0,USD,https://stockanalysis.com/stocks/nem/financials/
+NEM,stockanalysis,2023-12-31,11812000000.0,USD,https://stockanalysis.com/stocks/nem/financials/
+NEM,stockanalysis,2022-12-31,11915000000.0,USD,https://stockanalysis.com/stocks/nem/financials/
+NEM,stockanalysis,2021-12-31,12222000000.0,USD,https://stockanalysis.com/stocks/nem/financials/
+NEM,yahoo,2025-12-31,22669000000.0,USD,
+NEM,yahoo,2024-12-31,18682000000.0,USD,
+NEM,yahoo,2023-12-31,11812000000.0,USD,
+NEM,yahoo,2022-12-31,11915000000.0,USD,
+NEXA,stockanalysis,2025-12-31,3002055000.0,USD,https://stockanalysis.com/stocks/nexa/financials/
+NEXA,stockanalysis,2024-12-31,2766481000.0,USD,https://stockanalysis.com/stocks/nexa/financials/
+NEXA,stockanalysis,2023-12-31,2573233000.0,USD,https://stockanalysis.com/stocks/nexa/financials/
+NEXA,stockanalysis,2022-12-31,3033990000.0,USD,https://stockanalysis.com/stocks/nexa/financials/
+NEXA,stockanalysis,2021-12-31,2622110000.0,USD,https://stockanalysis.com/stocks/nexa/financials/
+NEXA,yahoo,2025-12-31,3002055000.0,USD,
+NEXA,yahoo,2024-12-31,2766481000.0,USD,
+NEXA,yahoo,2023-12-31,2573233000.0,USD,
+NEXA,yahoo,2022-12-31,3033990000.0,USD,
+NST.AX,stockanalysis,2026-06-30,7623100000.0,AUD,https://stockanalysis.com/quote/asx/NST/financials/
+NST.AX,stockanalysis,2025-06-30,6414900000.0,AUD,https://stockanalysis.com/quote/asx/NST/financials/
+NST.AX,stockanalysis,2024-06-30,4921200000.0,AUD,https://stockanalysis.com/quote/asx/NST/financials/
+NST.AX,stockanalysis,2023-06-30,4131100000.000001,AUD,https://stockanalysis.com/quote/asx/NST/financials/
+NST.AX,stockanalysis,2022-06-30,3806300000.0,AUD,https://stockanalysis.com/quote/asx/NST/financials/
+NST.AX,yahoo,2026-06-30,7623100000.0,AUD,
+NST.AX,yahoo,2025-06-30,6414900000.0,AUD,
+NST.AX,yahoo,2024-06-30,4921200000.0,AUD,
+NST.AX,yahoo,2023-06-30,4131100000.0,AUD,
+INCO.JK,stockanalysis,2025-12-31,990195000.0,USD,https://stockanalysis.com/quote/idx/INCO/financials/
+INCO.JK,stockanalysis,2024-12-31,950388000.0,USD,https://stockanalysis.com/quote/idx/INCO/financials/
+INCO.JK,stockanalysis,2023-12-31,1232263000.0,USD,https://stockanalysis.com/quote/idx/INCO/financials/
+INCO.JK,stockanalysis,2022-12-31,1179452000.0,USD,https://stockanalysis.com/quote/idx/INCO/financials/
+INCO.JK,stockanalysis,2021-12-31,953174000.0,USD,https://stockanalysis.com/quote/idx/INCO/financials/
+INCO.JK,yahoo,2025-12-31,990195000.0,USD,
+INCO.JK,yahoo,2024-12-31,950388000.0,USD,
+INCO.JK,yahoo,2023-12-31,1232263000.0,USD,
+INCO.JK,yahoo,2022-12-31,1179452000.0,USD,
+RIO.L,stockanalysis,2025-12-31,57638000000.0,USD,https://stockanalysis.com/quote/lon/RIO/financials/
+RIO.L,stockanalysis,2024-12-31,53658000000.0,USD,https://stockanalysis.com/quote/lon/RIO/financials/
+RIO.L,stockanalysis,2023-12-31,54041000000.0,USD,https://stockanalysis.com/quote/lon/RIO/financials/
+RIO.L,stockanalysis,2022-12-31,55554000000.0,USD,https://stockanalysis.com/quote/lon/RIO/financials/
+RIO.L,stockanalysis,2021-12-31,63495000000.0,USD,https://stockanalysis.com/quote/lon/RIO/financials/
+RIO.L,yahoo,2025-12-31,57638000000.0,USD,
+RIO.L,yahoo,2024-12-31,53658000000.0,USD,
+RIO.L,yahoo,2023-12-31,54041000000.0,USD,
+RIO.L,yahoo,2022-12-31,55554000000.0,USD,
+VALE3.SA,stockanalysis,2025-12-31,213595000000.0,BRL,https://stockanalysis.com/quote/bvmf/VALE3/financials/
+VALE3.SA,stockanalysis,2024-12-31,206005000000.0,BRL,https://stockanalysis.com/quote/bvmf/VALE3/financials/
+VALE3.SA,stockanalysis,2023-12-31,208066000000.0,BRL,https://stockanalysis.com/quote/bvmf/VALE3/financials/
+VALE3.SA,stockanalysis,2022-12-31,226508000000.0,BRL,https://stockanalysis.com/quote/bvmf/VALE3/financials/
+VALE3.SA,stockanalysis,2021-12-31,293524000000.0,BRL,https://stockanalysis.com/quote/bvmf/VALE3/financials/
+VALE3.SA,yahoo,2025-12-31,38403000000.0,BRL,
+VALE3.SA,yahoo,2024-12-31,38056000000.0,BRL,
+VALE3.SA,yahoo,2023-12-31,41784000000.0,BRL,
+VALE3.SA,yahoo,2022-12-31,43839000000.0,BRL,
+000408.SZ,stockanalysis,2025-12-31,3576752605.0,CNY,https://stockanalysis.com/quote/she/000408/financials/
+000408.SZ,stockanalysis,2024-12-31,3250800388.0,CNY,https://stockanalysis.com/quote/she/000408/financials/
+000408.SZ,stockanalysis,2023-12-31,5225721163.0,CNY,https://stockanalysis.com/quote/she/000408/financials/
+000408.SZ,stockanalysis,2023-01-01,8193913457.000001,CNY,https://stockanalysis.com/quote/she/000408/financials/
+000408.SZ,stockanalysis,2022-01-01,3622594322.0,CNY,https://stockanalysis.com/quote/she/000408/financials/
+000408.SZ,yahoo,2025-12-31,3576752605.97,CNY,
+000408.SZ,yahoo,2024-12-31,3250800389.88,CNY,
+000408.SZ,yahoo,2023-12-31,5225721163.41,CNY,
+000408.SZ,yahoo,2022-12-31,8193913458.11,CNY,
+2899.HK,yahoo,2025-12-31,349079082852.0,CNY,
+2899.HK,yahoo,2024-12-31,303639957153.0,CNY,
+2899.HK,yahoo,2023-12-31,293403242878.0,CNY,
+2899.HK,yahoo,2022-12-31,270328998459.0,CNY,

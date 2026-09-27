@@ -1,178 +1,402 @@
-ticker,source,fiscal_year_end,revenue,currency,form,filed,tag
-AUMB.V,yahoo,2025-12-31,0.0,CAD,,,Total Revenue
-AUMB.V,yahoo,2024-12-31,0.0,CAD,,,Total Revenue
-AUMB.V,yahoo,2023-12-31,731000.0,CAD,,,Total Revenue
-AUMB.V,yahoo,2022-12-31,5884000.0,CAD,,,Total Revenue
-AGI.TO,yahoo,2025-12-31,1808800000.0,USD,,,Total Revenue
-AGI.TO,yahoo,2024-12-31,1346900000.0,USD,,,Total Revenue
-AGI.TO,yahoo,2023-12-31,1023300000.0,USD,,,Total Revenue
-AGI.TO,yahoo,2022-12-31,821200000.0,USD,,,Total Revenue
-AAUC.TO,yahoo,2025-12-31,730382000.0,USD,,,Total Revenue
-AAUC.TO,yahoo,2024-12-31,1331824000.0,USD,,,Total Revenue
-AAUC.TO,yahoo,2023-12-31,655691000.0,USD,,,Total Revenue
-AAUC.TO,yahoo,2022-12-31,669551000.0,USD,,,Total Revenue
-AU,yahoo,2025-12-31,9893000000.0,USD,,,Total Revenue
-AU,yahoo,2024-12-31,5793000000.0,USD,,,Total Revenue
-AU,yahoo,2023-12-31,4582000000.0,USD,,,Total Revenue
-AU,yahoo,2022-12-31,4501000000.0,USD,,,Total Revenue
-SBM.AX,yahoo,2024-06-30,223603000.0,AUD,,,Total Revenue
-SBM.AX,yahoo,2023-06-30,323852000.0,AUD,,,Total Revenue
-SBM.AX,yahoo,2022-06-30,680345000.0,AUD,,,Total Revenue
-BTO.TO,yahoo,2025-12-31,3061238000.0,USD,,,Total Revenue
-BTO.TO,yahoo,2024-12-31,1902030000.0,USD,,,Total Revenue
-BTO.TO,yahoo,2023-12-31,1934272000.0,USD,,,Total Revenue
-BTO.TO,yahoo,2022-12-31,1732590000.0,USD,,,Total Revenue
-OGG.V,yahoo,2025-12-31,35478000.0,CAD,,,Total Revenue
-OGG.V,yahoo,2024-12-31,4560000.0,CAD,,,Total Revenue
-OGG.V,yahoo,2023-12-31,31625000.0,CAD,,,Total Revenue
-OGG.V,yahoo,2022-12-31,64046000.0,CAD,,,Total Revenue
-TSK.TO,yahoo,2025-12-31,12624477.0,CAD,,,Total Revenue
-TSK.TO,yahoo,2024-12-31,0.0,CAD,,,Total Revenue
-TSK.TO,yahoo,2023-12-31,0.0,CAD,,,Total Revenue
-TSK.TO,yahoo,2022-12-31,0.0,CAD,,,Total Revenue
-CYL.AX,yahoo,2024-06-30,317014000.0,AUD,,,Total Revenue
-CYL.AX,yahoo,2023-06-30,63944000.0,AUD,,,Total Revenue
-CYL.AX,yahoo,2022-06-30,63330429.0,AUD,,,Total Revenue
-CG.TO,yahoo,2025-12-31,1384562000.0,USD,,,Total Revenue
-CG.TO,yahoo,2024-12-31,1214503000.0,USD,,,Total Revenue
-CG.TO,yahoo,2023-12-31,1094897000.0,USD,,,Total Revenue
-CG.TO,yahoo,2022-12-31,850194000.0,USD,,,Total Revenue
-CERT.V,yahoo,2025-12-31,147085000.0,USD,,,Total Revenue
-CERT.V,yahoo,2024-12-31,116169000.0,USD,,,Total Revenue
-CERT.V,yahoo,2023-12-31,100101000.0,USD,,,Total Revenue
-CERT.V,yahoo,2022-12-31,90360000.0,USD,,,Total Revenue
-ELD.TO,yahoo,2025-12-31,1803431000.0,USD,,,Total Revenue
-ELD.TO,yahoo,2024-12-31,1323537000.0,USD,,,Total Revenue
-ELD.TO,yahoo,2023-12-31,1010099000.0,USD,,,Total Revenue
-ELD.TO,yahoo,2022-12-31,871461000.0,USD,,,Total Revenue
-EQX.TO,yahoo,2025-12-31,1817195000.0,USD,,,Total Revenue
-EQX.TO,yahoo,2024-12-31,912840000.0,USD,,,Total Revenue
-EQX.TO,yahoo,2023-12-31,1088191000.0,USD,,,Total Revenue
-EQX.TO,yahoo,2022-12-31,952196000.0,USD,,,Total Revenue
-FVI.TO,yahoo,2025-12-31,947059000.0,USD,,,Total Revenue
-FVI.TO,yahoo,2024-12-31,677243000.0,USD,,,Total Revenue
-FVI.TO,yahoo,2023-12-31,842428000.0,USD,,,Total Revenue
-FVI.TO,yahoo,2022-12-31,681491000.0,USD,,,Total Revenue
-GMD.AX,yahoo,2026-06-30,1742346000.0,AUD,,,Total Revenue
-GMD.AX,yahoo,2025-06-30,920141000.0,AUD,,,Total Revenue
-GMD.AX,yahoo,2024-06-30,438593000.0,AUD,,,Total Revenue
-GMD.AX,yahoo,2023-06-30,76963000.0,AUD,,,Total Revenue
-GFI,yahoo,2025-12-31,8751300000.0,USD,,,Total Revenue
-GFI,yahoo,2024-12-31,5201600000.0,USD,,,Total Revenue
-GFI,yahoo,2023-12-31,4500700000.0,USD,,,Total Revenue
-GFI,yahoo,2022-12-31,4286700000.0,USD,,,Total Revenue
-BGL.AX,yahoo,2026-06-30,576263000.0,AUD,,,Total Revenue
-BGL.AX,yahoo,2025-06-30,505837000.0,AUD,,,Total Revenue
-BGL.AX,yahoo,2024-06-30,298406000.0,AUD,,,Total Revenue
-600988.SS,yahoo,2025-12-31,12638506229.12,CNY,,,Total Revenue
-600988.SS,yahoo,2024-12-31,9025821822.22,CNY,,,Total Revenue
-600988.SS,yahoo,2023-12-31,7220951536.26,CNY,,,Total Revenue
-600988.SS,yahoo,2022-12-31,6266787257.0,CNY,,,Total Revenue
-HMY,yahoo,2024-06-30,61379000000.0,ZAR,,,Total Revenue
-HMY,yahoo,2023-06-30,49275000000.0,ZAR,,,Total Revenue
-HMY,yahoo,2022-06-30,42645000000.0,ZAR,,,Total Revenue
-IMG.TO,yahoo,2025-12-31,2852800000.0,USD,,,Total Revenue
-IMG.TO,yahoo,2024-12-31,1633000000.0,USD,,,Total Revenue
-IMG.TO,yahoo,2023-12-31,987100000.0,USD,,,Total Revenue
-IMG.TO,yahoo,2022-12-31,958800000.0,USD,,,Total Revenue
-KNT.TO,yahoo,2025-12-31,595249000.0,USD,,,Total Revenue
-KNT.TO,yahoo,2024-12-31,350623000.0,USD,,,Total Revenue
-KNT.TO,yahoo,2023-12-31,200255000.0,USD,,,Total Revenue
-KNT.TO,yahoo,2022-12-31,188186000.0,USD,,,Total Revenue
-K.TO,yahoo,2025-12-31,7051100000.0,USD,,,Total Revenue
-K.TO,yahoo,2024-12-31,5148800000.0,USD,,,Total Revenue
-K.TO,yahoo,2023-12-31,4239700000.0,USD,,,Total Revenue
-K.TO,yahoo,2022-12-31,3455100000.0,USD,,,Total Revenue
-ALK.AX,yahoo,2024-06-30,172991000.0,AUD,,,Total Revenue
-ALK.AX,yahoo,2023-06-30,190527000.0,AUD,,,Total Revenue
-ALK.AX,yahoo,2022-06-30,165010000.0,AUD,,,Total Revenue
-MUX,yahoo,2025-12-31,197553000.0,USD,,,Total Revenue
-MUX,yahoo,2024-12-31,174477000.0,USD,,,Total Revenue
-MUX,yahoo,2023-12-31,166231000.0,USD,,,Total Revenue
-MUX,yahoo,2022-12-31,110417000.0,USD,,,Total Revenue
-ASE.V,yahoo,2025-01-31,458876000.0,USD,,,Total Revenue
-ASE.V,yahoo,2024-01-31,426126000.0,USD,,,Total Revenue
-ASE.V,yahoo,2023-01-31,205246800.594682,USD,,,Total Revenue
-ASE.V,yahoo,2022-01-31,0.0,USD,,,Total Revenue
-MSA.TO,yahoo,2025-12-31,799674000.0,USD,,,Total Revenue
-MSA.TO,yahoo,2024-12-31,538566000.0,USD,,,Total Revenue
-MSA.TO,yahoo,2023-12-31,447290000.0,USD,,,Total Revenue
-MSA.TO,yahoo,2022-12-31,414937000.0,USD,,,Total Revenue
-LYC.AX,yahoo,2026-06-30,977945000.0,AUD,,,Total Revenue
-LYC.AX,yahoo,2025-06-30,542665000.0,AUD,,,Total Revenue
-LYC.AX,yahoo,2024-06-30,464446000.0,AUD,,,Total Revenue
-LYC.AX,yahoo,2023-06-30,787123000.0,AUD,,,Total Revenue
-AMRQ.L,yahoo,2024-12-31,0.0,CAD,,,Total Revenue
-AMRQ.L,yahoo,2023-12-31,0.0,CAD,,,Total Revenue
-AMRQ.L,yahoo,2022-12-31,0.0,CAD,,,Total Revenue
-AMRQ.L,yahoo,2021-12-31,0.0,CAD,,,Total Revenue
-NFGC.TO,yahoo,2025-12-31,5806973.0,CAD,,,Total Revenue
-NFGC.TO,yahoo,2024-12-31,0.0,CAD,,,Total Revenue
-NFGC.TO,yahoo,2023-12-31,0.0,CAD,,,Total Revenue
-NFGC.TO,yahoo,2022-12-31,0.0,CAD,,,Total Revenue
-OGC.TO,yahoo,2025-12-31,1893200000.0,USD,,,Total Revenue
-OGC.TO,yahoo,2024-12-31,1294000000.0,USD,,,Total Revenue
-OGC.TO,yahoo,2023-12-31,1026300000.0,USD,,,Total Revenue
-OGC.TO,yahoo,2022-12-31,967400000.0,USD,,,Total Revenue
-OBM.AX,yahoo,2026-06-30,807499000.0,AUD,,,Total Revenue
-OBM.AX,yahoo,2024-06-30,214236000.0,AUD,,,Total Revenue
-OBM.AX,yahoo,2023-06-30,135888000.0,AUD,,,Total Revenue
-OBM.AX,yahoo,2022-06-30,154261000.0,AUD,,,Total Revenue
-OLA.TO,yahoo,2025-12-31,1057881000.0,USD,,,Total Revenue
-OLA.TO,yahoo,2024-12-31,343918000.0,USD,,,Total Revenue
-OLA.TO,yahoo,2023-12-31,233643000.0,USD,,,Total Revenue
-OLA.TO,yahoo,2022-12-31,193230000.0,USD,,,Total Revenue
-PNR.AX,yahoo,2025-06-30,357302451.0,AUD,,,Total Revenue
-PNR.AX,yahoo,2024-06-30,229431930.0,AUD,,,Total Revenue
-PNR.AX,yahoo,2023-06-30,98544119.0,AUD,,,Total Revenue
-PNR.AX,yahoo,2022-06-30,73520853.0,AUD,,,Total Revenue
-IAU.TO,yahoo,2025-12-31,95193000.0,USD,,,Total Revenue
-IAU.TO,yahoo,2024-12-31,50335000.0,USD,,,Total Revenue
-IAU.TO,yahoo,2023-12-31,54910000.0,USD,,,Total Revenue
-IAU.TO,yahoo,2022-12-31,36958000.0,USD,,,Total Revenue
-PSAB.JK,yahoo,2025-12-31,288750510.0,USD,,,Total Revenue
-PSAB.JK,yahoo,2024-12-31,236010879.0,USD,,,Total Revenue
-PSAB.JK,yahoo,2023-12-31,170145810.0,USD,,,Total Revenue
-PSAB.JK,yahoo,2022-12-31,100271666.0,USD,,,Total Revenue
-RMS.AX,yahoo,2024-06-30,882510000.0,AUD,,,Total Revenue
-RMS.AX,yahoo,2023-06-30,631203000.0,AUD,,,Total Revenue
-RMS.AX,yahoo,2022-06-30,603559000.0,AUD,,,Total Revenue
-RRL.AX,yahoo,2026-06-30,2349099000.0,AUD,,,Total Revenue
-RRL.AX,yahoo,2025-06-30,1647412000.0,AUD,,,Total Revenue
-RRL.AX,yahoo,2024-06-30,1262814000.0,AUD,,,Total Revenue
-RRL.AX,yahoo,2023-06-30,1133732000.0,AUD,,,Total Revenue
-RSG.AX,yahoo,2025-12-31,865600000.0,USD,,,Total Revenue
-RSG.AX,yahoo,2024-12-31,800973000.0,USD,,,Total Revenue
-RSG.AX,yahoo,2023-12-31,631073000.0,USD,,,Total Revenue
-RSG.AX,yahoo,2022-12-31,651129000.0,USD,,,Total Revenue
-2259.HK,yahoo,2025-12-31,5383480000.0,USD,,,Total Revenue
-2259.HK,yahoo,2024-12-31,2989935000.0,USD,,,Total Revenue
-2259.HK,yahoo,2023-12-31,2262365000.0,USD,,,Total Revenue
-2259.HK,yahoo,2022-12-31,1817981000.0,USD,,,Total Revenue
-SPA.V,yahoo,2025-12-31,0.0,CAD,,,Total Revenue
-SPA.V,yahoo,2024-12-31,0.0,CAD,,,Total Revenue
-SPA.V,yahoo,2023-12-31,0.0,CAD,,,Total Revenue
-SPA.V,yahoo,2022-12-31,0.0,CAD,,,Total Revenue
-SSRM,yahoo,2025-12-31,1629637000.0,USD,,,Total Revenue
-SSRM,yahoo,2024-12-31,995618000.0,USD,,,Total Revenue
-SSRM,yahoo,2023-12-31,1426927000.0,USD,,,Total Revenue
-SSRM,yahoo,2022-12-31,1148033000.0,USD,,,Total Revenue
-STLR.TO,yahoo,2025-12-31,0.0,CAD,,,Total Revenue
-STLR.TO,yahoo,2024-12-31,0.0,CAD,,,Total Revenue
-STLR.TO,yahoo,2023-12-31,0.0,CAD,,,Total Revenue
-STLR.TO,yahoo,2022-12-31,0.0,CAD,,,Total Revenue
-VAU.AX,yahoo,2026-06-30,1926607000.0,AUD,,,Total Revenue
-VAU.AX,yahoo,2024-06-30,620002000.0,AUD,,,Total Revenue
-VAU.AX,yahoo,2023-06-30,422745000.0,AUD,,,Total Revenue
-VAU.AX,yahoo,2022-06-30,162899000.0,AUD,,,Total Revenue
-WDO.TO,yahoo,2025-12-31,914325000.0,CAD,,,Total Revenue
-WDO.TO,yahoo,2024-12-31,558184000.0,CAD,,,Total Revenue
-WDO.TO,yahoo,2023-12-31,333173000.0,CAD,,,Total Revenue
-WDO.TO,yahoo,2022-12-31,265483000.0,CAD,,,Total Revenue
-WAF.AX,yahoo,2025-12-31,1533800000.0,AUD,,,Total Revenue
-WAF.AX,yahoo,2024-12-31,724368000.0,AUD,,,Total Revenue
-WAF.AX,yahoo,2023-12-31,658815000.0,AUD,,,Total Revenue
-WAF.AX,yahoo,2022-12-31,606134000.0,AUD,,,Total Revenue
-WGX.AX,yahoo,2024-06-30,716472565.0,AUD,,,Total Revenue
-WGX.AX,yahoo,2023-06-30,654371234.0,AUD,,,Total Revenue
-WGX.AX,yahoo,2022-06-30,647576618.0,AUD,,,Total Revenue
+ticker,source,fiscal_year_end,revenue,currency,url
+AUMB.V,stockanalysis,2025-12-31,,CAD,https://stockanalysis.com/quote/tsxv/AUMB/financials/
+AUMB.V,stockanalysis,2024-12-31,,CAD,https://stockanalysis.com/quote/tsxv/AUMB/financials/
+AUMB.V,stockanalysis,2023-12-31,731000.0,CAD,https://stockanalysis.com/quote/tsxv/AUMB/financials/
+AUMB.V,stockanalysis,2022-12-31,5884000.0,CAD,https://stockanalysis.com/quote/tsxv/AUMB/financials/
+AUMB.V,stockanalysis,2021-12-31,9667000.0,CAD,https://stockanalysis.com/quote/tsxv/AUMB/financials/
+AUMB.V,yahoo,2025-12-31,0.0,CAD,
+AUMB.V,yahoo,2024-12-31,0.0,CAD,
+AUMB.V,yahoo,2023-12-31,731000.0,CAD,
+AUMB.V,yahoo,2022-12-31,5884000.0,CAD,
+AGI.TO,stockanalysis,2025-12-31,1808800000.0,USD,https://stockanalysis.com/quote/tsx/AGI/financials/
+AGI.TO,stockanalysis,2024-12-31,1346900000.0,USD,https://stockanalysis.com/quote/tsx/AGI/financials/
+AGI.TO,stockanalysis,2023-12-31,1023300000.0,USD,https://stockanalysis.com/quote/tsx/AGI/financials/
+AGI.TO,stockanalysis,2022-12-31,821200000.0,USD,https://stockanalysis.com/quote/tsx/AGI/financials/
+AGI.TO,stockanalysis,2021-12-31,823600000.0,USD,https://stockanalysis.com/quote/tsx/AGI/financials/
+AGI.TO,yahoo,2025-12-31,1808800000.0,USD,
+AGI.TO,yahoo,2024-12-31,1346900000.0,USD,
+AGI.TO,yahoo,2023-12-31,1023300000.0,USD,
+AGI.TO,yahoo,2022-12-31,821200000.0,USD,
+AAUC.TO,stockanalysis,2025-12-31,1331824000.0,USD,https://stockanalysis.com/quote/tsx/AAUC/financials/
+AAUC.TO,stockanalysis,2024-12-31,730382000.0,USD,https://stockanalysis.com/quote/tsx/AAUC/financials/
+AAUC.TO,stockanalysis,2023-12-31,655691000.0,USD,https://stockanalysis.com/quote/tsx/AAUC/financials/
+AAUC.TO,stockanalysis,2022-12-31,669551000.0,USD,https://stockanalysis.com/quote/tsx/AAUC/financials/
+AAUC.TO,stockanalysis,2021-12-31,489335000.0,USD,https://stockanalysis.com/quote/tsx/AAUC/financials/
+AAUC.TO,yahoo,2025-12-31,730382000.0,USD,
+AAUC.TO,yahoo,2024-12-31,1331824000.0,USD,
+AAUC.TO,yahoo,2023-12-31,655691000.0,USD,
+AAUC.TO,yahoo,2022-12-31,669551000.0,USD,
+AU,stockanalysis,2025-12-31,9893000000.0,USD,https://stockanalysis.com/stocks/au/financials/
+AU,stockanalysis,2024-12-31,5793000000.0,USD,https://stockanalysis.com/stocks/au/financials/
+AU,stockanalysis,2023-12-31,4582000000.0,USD,https://stockanalysis.com/stocks/au/financials/
+AU,stockanalysis,2022-12-31,4501000000.0,USD,https://stockanalysis.com/stocks/au/financials/
+AU,stockanalysis,2021-12-31,4029000000.0,USD,https://stockanalysis.com/stocks/au/financials/
+AU,yahoo,2025-12-31,9893000000.0,USD,
+AU,yahoo,2024-12-31,5793000000.0,USD,
+AU,yahoo,2023-12-31,4582000000.0,USD,
+AU,yahoo,2022-12-31,4501000000.0,USD,
+SBM.AX,stockanalysis,2026-06-30,3625000.0,AUD,https://stockanalysis.com/quote/asx/SBM/financials/
+SBM.AX,stockanalysis,2025-06-30,15030000.0,AUD,https://stockanalysis.com/quote/asx/SBM/financials/
+SBM.AX,stockanalysis,2024-06-30,197724000.0,AUD,https://stockanalysis.com/quote/asx/SBM/financials/
+SBM.AX,stockanalysis,2023-06-30,323852000.0,AUD,https://stockanalysis.com/quote/asx/SBM/financials/
+SBM.AX,stockanalysis,2022-06-30,201272000.0,AUD,https://stockanalysis.com/quote/asx/SBM/financials/
+SBM.AX,yahoo,2024-06-30,223603000.0,AUD,
+SBM.AX,yahoo,2023-06-30,323852000.0,AUD,
+SBM.AX,yahoo,2022-06-30,680345000.0,AUD,
+BTO.TO,stockanalysis,2025-12-31,3061238000.0,USD,https://stockanalysis.com/quote/tsx/BTO/financials/
+BTO.TO,stockanalysis,2024-12-31,1902030000.0,USD,https://stockanalysis.com/quote/tsx/BTO/financials/
+BTO.TO,stockanalysis,2023-12-31,1934272000.0,USD,https://stockanalysis.com/quote/tsx/BTO/financials/
+BTO.TO,stockanalysis,2022-12-31,1732590000.0,USD,https://stockanalysis.com/quote/tsx/BTO/financials/
+BTO.TO,stockanalysis,2021-12-31,1762264000.0,USD,https://stockanalysis.com/quote/tsx/BTO/financials/
+BTO.TO,yahoo,2025-12-31,3061238000.0,USD,
+BTO.TO,yahoo,2024-12-31,1902030000.0,USD,
+BTO.TO,yahoo,2023-12-31,1934272000.0,USD,
+BTO.TO,yahoo,2022-12-31,1732590000.0,USD,
+OGG.V,stockanalysis,2025-12-31,35478000.0,CAD,https://stockanalysis.com/quote/tsxv/OGG/financials/
+OGG.V,stockanalysis,2024-12-31,4560000.0,CAD,https://stockanalysis.com/quote/tsxv/OGG/financials/
+OGG.V,stockanalysis,2023-12-31,31625000.0,CAD,https://stockanalysis.com/quote/tsxv/OGG/financials/
+OGG.V,stockanalysis,2022-12-31,64046000.00000001,CAD,https://stockanalysis.com/quote/tsxv/OGG/financials/
+OGG.V,stockanalysis,2021-12-31,7661000.0,CAD,https://stockanalysis.com/quote/tsxv/OGG/financials/
+OGG.V,yahoo,2025-12-31,35478000.0,CAD,
+OGG.V,yahoo,2024-12-31,4560000.0,CAD,
+OGG.V,yahoo,2023-12-31,31625000.0,CAD,
+OGG.V,yahoo,2022-12-31,64046000.0,CAD,
+TSK.TO,stockanalysis,2024-12-31,,CAD,https://stockanalysis.com/quote/tsx/TSK/financials/
+TSK.TO,stockanalysis,2023-12-31,,CAD,https://stockanalysis.com/quote/tsx/TSK/financials/
+TSK.TO,stockanalysis,2022-12-31,,CAD,https://stockanalysis.com/quote/tsx/TSK/financials/
+TSK.TO,stockanalysis,2021-12-31,,CAD,https://stockanalysis.com/quote/tsx/TSK/financials/
+TSK.TO,stockanalysis,2020-12-31,,CAD,https://stockanalysis.com/quote/tsx/TSK/financials/
+TSK.TO,yahoo,2025-12-31,12624477.0,CAD,
+TSK.TO,yahoo,2024-12-31,0.0,CAD,
+TSK.TO,yahoo,2023-12-31,0.0,CAD,
+TSK.TO,yahoo,2022-12-31,0.0,CAD,
+CXB.TO,stockanalysis,2024-12-31,585863000.0,USD,https://stockanalysis.com/quote/tsx/CXB/financials/
+CXB.TO,stockanalysis,2023-12-31,561702000.0,USD,https://stockanalysis.com/quote/tsx/CXB/financials/
+CXB.TO,stockanalysis,2022-12-31,408613000.0,USD,https://stockanalysis.com/quote/tsx/CXB/financials/
+CXB.TO,stockanalysis,2021-12-31,328132000.0,USD,https://stockanalysis.com/quote/tsx/CXB/financials/
+CXB.TO,stockanalysis,2020-12-31,242748000.0,USD,https://stockanalysis.com/quote/tsx/CXB/financials/
+CYL.AX,stockanalysis,2026-06-30,631938000.0,AUD,https://stockanalysis.com/quote/asx/CYL/financials/
+CYL.AX,stockanalysis,2025-06-30,361412000.0,AUD,https://stockanalysis.com/quote/asx/CYL/financials/
+CYL.AX,stockanalysis,2024-06-30,241951000.0,AUD,https://stockanalysis.com/quote/asx/CYL/financials/
+CYL.AX,stockanalysis,2023-06-30,63944000.0,AUD,https://stockanalysis.com/quote/asx/CYL/financials/
+CYL.AX,stockanalysis,2022-06-30,63330000.0,AUD,https://stockanalysis.com/quote/asx/CYL/financials/
+CYL.AX,yahoo,2024-06-30,317014000.0,AUD,
+CYL.AX,yahoo,2023-06-30,63944000.0,AUD,
+CYL.AX,yahoo,2022-06-30,63330429.0,AUD,
+CG.TO,stockanalysis,2025-12-31,1384562000.0,USD,https://stockanalysis.com/quote/tsx/CG/financials/
+CG.TO,stockanalysis,2024-12-31,1214503000.0,USD,https://stockanalysis.com/quote/tsx/CG/financials/
+CG.TO,stockanalysis,2023-12-31,1094897000.0,USD,https://stockanalysis.com/quote/tsx/CG/financials/
+CG.TO,stockanalysis,2022-12-31,850194000.0,USD,https://stockanalysis.com/quote/tsx/CG/financials/
+CG.TO,stockanalysis,2021-12-31,900141000.0,USD,https://stockanalysis.com/quote/tsx/CG/financials/
+CG.TO,yahoo,2025-12-31,1384562000.0,USD,
+CG.TO,yahoo,2024-12-31,1214503000.0,USD,
+CG.TO,yahoo,2023-12-31,1094897000.0,USD,
+CG.TO,yahoo,2022-12-31,850194000.0,USD,
+CERT.V,stockanalysis,2025-12-31,147085000.0,USD,https://stockanalysis.com/quote/tsxv/CERT/financials/
+CERT.V,stockanalysis,2024-12-31,116169000.0,USD,https://stockanalysis.com/quote/tsxv/CERT/financials/
+CERT.V,stockanalysis,2023-12-31,100101000.0,USD,https://stockanalysis.com/quote/tsxv/CERT/financials/
+CERT.V,stockanalysis,2022-12-31,90360000.0,USD,https://stockanalysis.com/quote/tsxv/CERT/financials/
+CERT.V,stockanalysis,2021-12-31,70051000.0,USD,https://stockanalysis.com/quote/tsxv/CERT/financials/
+CERT.V,yahoo,2025-12-31,147085000.0,USD,
+CERT.V,yahoo,2024-12-31,116169000.0,USD,
+CERT.V,yahoo,2023-12-31,100101000.0,USD,
+CERT.V,yahoo,2022-12-31,90360000.0,USD,
+ELD.TO,stockanalysis,2025-12-31,1818856000.0,USD,https://stockanalysis.com/quote/tsx/ELD/financials/
+ELD.TO,stockanalysis,2024-12-31,1322581000.0,USD,https://stockanalysis.com/quote/tsx/ELD/financials/
+ELD.TO,stockanalysis,2023-12-31,1008501000.0,USD,https://stockanalysis.com/quote/tsx/ELD/financials/
+ELD.TO,stockanalysis,2022-12-31,871984000.0,USD,https://stockanalysis.com/quote/tsx/ELD/financials/
+ELD.TO,stockanalysis,2021-12-31,940914000.0,USD,https://stockanalysis.com/quote/tsx/ELD/financials/
+ELD.TO,yahoo,2025-12-31,1803431000.0,USD,
+ELD.TO,yahoo,2024-12-31,1323537000.0,USD,
+ELD.TO,yahoo,2023-12-31,1010099000.0,USD,
+ELD.TO,yahoo,2022-12-31,871461000.0,USD,
+EQX.TO,stockanalysis,2025-12-31,1817195000.0,USD,https://stockanalysis.com/quote/tsx/EQX/financials/
+EQX.TO,stockanalysis,2024-12-31,912840000.0,USD,https://stockanalysis.com/quote/tsx/EQX/financials/
+EQX.TO,stockanalysis,2023-12-31,1088191000.0,USD,https://stockanalysis.com/quote/tsx/EQX/financials/
+EQX.TO,stockanalysis,2022-12-31,952196000.0,USD,https://stockanalysis.com/quote/tsx/EQX/financials/
+EQX.TO,stockanalysis,2021-12-31,1082286000.0,USD,https://stockanalysis.com/quote/tsx/EQX/financials/
+EQX.TO,yahoo,2025-12-31,1817195000.0,USD,
+EQX.TO,yahoo,2024-12-31,912840000.0,USD,
+EQX.TO,yahoo,2023-12-31,1088191000.0,USD,
+EQX.TO,yahoo,2022-12-31,952196000.0,USD,
+FVI.TO,stockanalysis,2025-12-31,947059000.0,USD,https://stockanalysis.com/quote/tsx/FVI/financials/
+FVI.TO,stockanalysis,2024-12-31,677243000.0,USD,https://stockanalysis.com/quote/tsx/FVI/financials/
+FVI.TO,stockanalysis,2023-12-31,842428000.0,USD,https://stockanalysis.com/quote/tsx/FVI/financials/
+FVI.TO,stockanalysis,2022-12-31,681491000.0,USD,https://stockanalysis.com/quote/tsx/FVI/financials/
+FVI.TO,stockanalysis,2021-12-31,599853000.0,USD,https://stockanalysis.com/quote/tsx/FVI/financials/
+FVI.TO,yahoo,2025-12-31,947059000.0,USD,
+FVI.TO,yahoo,2024-12-31,677243000.0,USD,
+FVI.TO,yahoo,2023-12-31,842428000.0,USD,
+FVI.TO,yahoo,2022-12-31,681491000.0,USD,
+GMD.AX,stockanalysis,2026-06-30,1742346000.0,AUD,https://stockanalysis.com/quote/asx/GMD/financials/
+GMD.AX,stockanalysis,2025-06-30,920141000.0,AUD,https://stockanalysis.com/quote/asx/GMD/financials/
+GMD.AX,stockanalysis,2024-06-30,438593000.0,AUD,https://stockanalysis.com/quote/asx/GMD/financials/
+GMD.AX,stockanalysis,2023-06-30,76963000.0,AUD,https://stockanalysis.com/quote/asx/GMD/financials/
+GMD.AX,stockanalysis,2022-06-30,,AUD,https://stockanalysis.com/quote/asx/GMD/financials/
+GMD.AX,yahoo,2026-06-30,1742346000.0,AUD,
+GMD.AX,yahoo,2025-06-30,920141000.0,AUD,
+GMD.AX,yahoo,2024-06-30,438593000.0,AUD,
+GMD.AX,yahoo,2023-06-30,76963000.0,AUD,
+GFI,stockanalysis,2025-12-31,8751300000.0,USD,https://stockanalysis.com/stocks/gfi/financials/
+GFI,stockanalysis,2024-12-31,5201600000.0,USD,https://stockanalysis.com/stocks/gfi/financials/
+GFI,stockanalysis,2023-12-31,4500700000.0,USD,https://stockanalysis.com/stocks/gfi/financials/
+GFI,stockanalysis,2022-12-31,4286700000.0,USD,https://stockanalysis.com/stocks/gfi/financials/
+GFI,stockanalysis,2021-12-31,4195200000.0,USD,https://stockanalysis.com/stocks/gfi/financials/
+GFI,yahoo,2025-12-31,8751300000.0,USD,
+GFI,yahoo,2024-12-31,5201600000.0,USD,
+GFI,yahoo,2023-12-31,4500700000.0,USD,
+GFI,yahoo,2022-12-31,4286700000.0,USD,
+GOR.AX,stockanalysis,2024-12-31,527960000.00000006,AUD,https://stockanalysis.com/quote/asx/GOR/financials/
+GOR.AX,stockanalysis,2023-12-31,472125000.0,AUD,https://stockanalysis.com/quote/asx/GOR/financials/
+GOR.AX,stockanalysis,2022-12-31,382938000.0,AUD,https://stockanalysis.com/quote/asx/GOR/financials/
+GOR.AX,stockanalysis,2021-12-31,274759000.0,AUD,https://stockanalysis.com/quote/asx/GOR/financials/
+GOR.AX,stockanalysis,2020-12-31,294650000.0,AUD,https://stockanalysis.com/quote/asx/GOR/financials/
+BGL.AX,stockanalysis,2026-06-30,576263000.0,AUD,https://stockanalysis.com/quote/asx/BGL/financials/
+BGL.AX,stockanalysis,2025-06-30,394967000.0,AUD,https://stockanalysis.com/quote/asx/BGL/financials/
+BGL.AX,stockanalysis,2024-06-30,298406000.0,AUD,https://stockanalysis.com/quote/asx/BGL/financials/
+BGL.AX,stockanalysis,2023-06-30,,AUD,https://stockanalysis.com/quote/asx/BGL/financials/
+BGL.AX,stockanalysis,2022-06-30,,AUD,https://stockanalysis.com/quote/asx/BGL/financials/
+BGL.AX,yahoo,2026-06-30,576263000.0,AUD,
+BGL.AX,yahoo,2025-06-30,505837000.0,AUD,
+BGL.AX,yahoo,2024-06-30,298406000.0,AUD,
+600988.SS,stockanalysis,2025-12-31,12638506228.0,CNY,https://stockanalysis.com/quote/sha/600988/financials/
+600988.SS,stockanalysis,2024-12-31,9025821821.0,CNY,https://stockanalysis.com/quote/sha/600988/financials/
+600988.SS,stockanalysis,2023-12-31,7220951536.0,CNY,https://stockanalysis.com/quote/sha/600988/financials/
+600988.SS,stockanalysis,2022-12-31,6266787256.0,CNY,https://stockanalysis.com/quote/sha/600988/financials/
+600988.SS,stockanalysis,2021-12-31,3782624087.0,CNY,https://stockanalysis.com/quote/sha/600988/financials/
+600988.SS,yahoo,2025-12-31,12638506229.12,CNY,
+600988.SS,yahoo,2024-12-31,9025821822.22,CNY,
+600988.SS,yahoo,2023-12-31,7220951536.26,CNY,
+600988.SS,yahoo,2022-12-31,6266787257.0,CNY,
+HMY,stockanalysis,2026-06-30,99238000000.0,ZAR,https://stockanalysis.com/stocks/hmy/financials/
+HMY,stockanalysis,2025-06-30,73896000000.0,ZAR,https://stockanalysis.com/stocks/hmy/financials/
+HMY,stockanalysis,2024-06-30,61379000000.0,ZAR,https://stockanalysis.com/stocks/hmy/financials/
+HMY,stockanalysis,2023-06-30,49275000000.0,ZAR,https://stockanalysis.com/stocks/hmy/financials/
+HMY,stockanalysis,2022-06-30,42645000000.0,ZAR,https://stockanalysis.com/stocks/hmy/financials/
+HMY,yahoo,2024-06-30,61379000000.0,ZAR,
+HMY,yahoo,2023-06-30,49275000000.0,ZAR,
+HMY,yahoo,2022-06-30,42645000000.0,ZAR,
+IMG.TO,stockanalysis,2025-12-31,2852800000.0,USD,https://stockanalysis.com/quote/tsx/IMG/financials/
+IMG.TO,stockanalysis,2024-12-31,1633000000.0,USD,https://stockanalysis.com/quote/tsx/IMG/financials/
+IMG.TO,stockanalysis,2023-12-31,987100000.0,USD,https://stockanalysis.com/quote/tsx/IMG/financials/
+IMG.TO,stockanalysis,2022-12-31,958800000.0,USD,https://stockanalysis.com/quote/tsx/IMG/financials/
+IMG.TO,stockanalysis,2021-12-31,875500000.0,USD,https://stockanalysis.com/quote/tsx/IMG/financials/
+IMG.TO,yahoo,2025-12-31,2852800000.0,USD,
+IMG.TO,yahoo,2024-12-31,1633000000.0,USD,
+IMG.TO,yahoo,2023-12-31,987100000.0,USD,
+IMG.TO,yahoo,2022-12-31,958800000.0,USD,
+KNT.TO,stockanalysis,2025-12-31,595249000.0,USD,https://stockanalysis.com/quote/tsx/KNT/financials/
+KNT.TO,stockanalysis,2024-12-31,350623000.0,USD,https://stockanalysis.com/quote/tsx/KNT/financials/
+KNT.TO,stockanalysis,2023-12-31,200255000.0,USD,https://stockanalysis.com/quote/tsx/KNT/financials/
+KNT.TO,stockanalysis,2022-12-31,188186000.0,USD,https://stockanalysis.com/quote/tsx/KNT/financials/
+KNT.TO,stockanalysis,2021-12-31,154326000.0,USD,https://stockanalysis.com/quote/tsx/KNT/financials/
+KNT.TO,yahoo,2025-12-31,595249000.0,USD,
+KNT.TO,yahoo,2024-12-31,350623000.0,USD,
+KNT.TO,yahoo,2023-12-31,200255000.0,USD,
+KNT.TO,yahoo,2022-12-31,188186000.0,USD,
+K.TO,stockanalysis,2025-12-31,7051100000.0,USD,https://stockanalysis.com/quote/tsx/K/financials/
+K.TO,stockanalysis,2024-12-31,5148800000.0,USD,https://stockanalysis.com/quote/tsx/K/financials/
+K.TO,stockanalysis,2023-12-31,4239700000.0,USD,https://stockanalysis.com/quote/tsx/K/financials/
+K.TO,stockanalysis,2022-12-31,3455100000.0,USD,https://stockanalysis.com/quote/tsx/K/financials/
+K.TO,stockanalysis,2021-12-31,2599600000.0,USD,https://stockanalysis.com/quote/tsx/K/financials/
+K.TO,yahoo,2025-12-31,7051100000.0,USD,
+K.TO,yahoo,2024-12-31,5148800000.0,USD,
+K.TO,yahoo,2023-12-31,4239700000.0,USD,
+K.TO,yahoo,2022-12-31,3455100000.0,USD,
+ALK.AX,stockanalysis,2026-06-30,935822000.0,AUD,https://stockanalysis.com/quote/asx/ALK/financials/
+ALK.AX,stockanalysis,2025-06-30,262362000.00000003,AUD,https://stockanalysis.com/quote/asx/ALK/financials/
+ALK.AX,stockanalysis,2024-06-30,172991000.0,AUD,https://stockanalysis.com/quote/asx/ALK/financials/
+ALK.AX,stockanalysis,2023-06-30,190527000.0,AUD,https://stockanalysis.com/quote/asx/ALK/financials/
+ALK.AX,stockanalysis,2022-06-30,165010000.0,AUD,https://stockanalysis.com/quote/asx/ALK/financials/
+ALK.AX,yahoo,2024-06-30,172991000.0,AUD,
+ALK.AX,yahoo,2023-06-30,190527000.0,AUD,
+ALK.AX,yahoo,2022-06-30,165010000.0,AUD,
+MUX,stockanalysis,2025-12-31,197553000.0,USD,https://stockanalysis.com/stocks/mux/financials/
+MUX,stockanalysis,2024-12-31,174477000.0,USD,https://stockanalysis.com/stocks/mux/financials/
+MUX,stockanalysis,2023-12-31,166231000.0,USD,https://stockanalysis.com/stocks/mux/financials/
+MUX,stockanalysis,2022-12-31,110417000.0,USD,https://stockanalysis.com/stocks/mux/financials/
+MUX,stockanalysis,2021-12-31,136541000.0,USD,https://stockanalysis.com/stocks/mux/financials/
+MUX,yahoo,2025-12-31,197553000.0,USD,
+MUX,yahoo,2024-12-31,174477000.0,USD,
+MUX,yahoo,2023-12-31,166231000.0,USD,
+MUX,yahoo,2022-12-31,110417000.0,USD,
+ASE.V,stockanalysis,2025-12-31,526466138.0,USD,https://stockanalysis.com/quote/tsxv/ASE/financials/
+ASE.V,stockanalysis,2025-01-31,458876000.0,USD,https://stockanalysis.com/quote/tsxv/ASE/financials/
+ASE.V,stockanalysis,2024-01-31,426126000.0,USD,https://stockanalysis.com/quote/tsxv/ASE/financials/
+ASE.V,stockanalysis,2023-01-31,205991647.0,USD,https://stockanalysis.com/quote/tsxv/ASE/financials/
+ASE.V,stockanalysis,2022-01-31,,USD,https://stockanalysis.com/quote/tsxv/ASE/financials/
+ASE.V,yahoo,2025-01-31,458876000.0,USD,
+ASE.V,yahoo,2024-01-31,426126000.0,USD,
+ASE.V,yahoo,2023-01-31,205246800.594682,USD,
+ASE.V,yahoo,2022-01-31,0.0,USD,
+MSA.TO,stockanalysis,2025-12-31,799674000.0,USD,https://stockanalysis.com/quote/tsx/MSA/financials/
+MSA.TO,stockanalysis,2024-12-31,538566000.0,USD,https://stockanalysis.com/quote/tsx/MSA/financials/
+MSA.TO,stockanalysis,2023-12-31,447290000.0,USD,https://stockanalysis.com/quote/tsx/MSA/financials/
+MSA.TO,stockanalysis,2022-12-31,414937000.0,USD,https://stockanalysis.com/quote/tsx/MSA/financials/
+MSA.TO,stockanalysis,2021-12-31,496247000.0,USD,https://stockanalysis.com/quote/tsx/MSA/financials/
+MSA.TO,yahoo,2025-12-31,799674000.0,USD,
+MSA.TO,yahoo,2024-12-31,538566000.0,USD,
+MSA.TO,yahoo,2023-12-31,447290000.0,USD,
+MSA.TO,yahoo,2022-12-31,414937000.0,USD,
+LYC.AX,stockanalysis,2026-06-30,977945000.0,AUD,https://stockanalysis.com/quote/asx/LYC/financials/
+LYC.AX,stockanalysis,2025-06-30,556512000.0,AUD,https://stockanalysis.com/quote/asx/LYC/financials/
+LYC.AX,stockanalysis,2024-06-30,463285000.0,AUD,https://stockanalysis.com/quote/asx/LYC/financials/
+LYC.AX,stockanalysis,2023-06-30,739279000.0,AUD,https://stockanalysis.com/quote/asx/LYC/financials/
+LYC.AX,stockanalysis,2022-06-30,920014000.0,AUD,https://stockanalysis.com/quote/asx/LYC/financials/
+LYC.AX,yahoo,2026-06-30,977945000.0,AUD,
+LYC.AX,yahoo,2025-06-30,542665000.0,AUD,
+LYC.AX,yahoo,2024-06-30,464446000.0,AUD,
+LYC.AX,yahoo,2023-06-30,787123000.0,AUD,
+AMRQ.L,yahoo,2024-12-31,0.0,CAD,
+AMRQ.L,yahoo,2023-12-31,0.0,CAD,
+AMRQ.L,yahoo,2022-12-31,0.0,CAD,
+AMRQ.L,yahoo,2021-12-31,0.0,CAD,
+NFGC.TO,stockanalysis,2025-12-31,5806973.0,CAD,https://stockanalysis.com/quote/tsx/NFGC/financials/
+NFGC.TO,stockanalysis,2024-12-31,,CAD,https://stockanalysis.com/quote/tsx/NFGC/financials/
+NFGC.TO,stockanalysis,2023-12-31,,CAD,https://stockanalysis.com/quote/tsx/NFGC/financials/
+NFGC.TO,stockanalysis,2022-12-31,,CAD,https://stockanalysis.com/quote/tsx/NFGC/financials/
+NFGC.TO,stockanalysis,2021-12-31,,CAD,https://stockanalysis.com/quote/tsx/NFGC/financials/
+NFGC.TO,yahoo,2025-12-31,5806973.0,CAD,
+NFGC.TO,yahoo,2024-12-31,0.0,CAD,
+NFGC.TO,yahoo,2023-12-31,0.0,CAD,
+NFGC.TO,yahoo,2022-12-31,0.0,CAD,
+OGC.TO,stockanalysis,2025-12-31,1893200000.0,USD,https://stockanalysis.com/quote/tsx/OGC/financials/
+OGC.TO,stockanalysis,2024-12-31,1294000000.0,USD,https://stockanalysis.com/quote/tsx/OGC/financials/
+OGC.TO,stockanalysis,2023-12-31,1026300000.0,USD,https://stockanalysis.com/quote/tsx/OGC/financials/
+OGC.TO,stockanalysis,2022-12-31,967400000.0,USD,https://stockanalysis.com/quote/tsx/OGC/financials/
+OGC.TO,stockanalysis,2021-12-31,744700000.0,USD,https://stockanalysis.com/quote/tsx/OGC/financials/
+OGC.TO,yahoo,2025-12-31,1893200000.0,USD,
+OGC.TO,yahoo,2024-12-31,1294000000.0,USD,
+OGC.TO,yahoo,2023-12-31,1026300000.0,USD,
+OGC.TO,yahoo,2022-12-31,967400000.0,USD,
+OBM.AX,stockanalysis,2026-06-30,807499000.0,AUD,https://stockanalysis.com/quote/asx/OBM/financials/
+OBM.AX,stockanalysis,2025-06-30,404292000.0,AUD,https://stockanalysis.com/quote/asx/OBM/financials/
+OBM.AX,stockanalysis,2024-06-30,214236000.0,AUD,https://stockanalysis.com/quote/asx/OBM/financials/
+OBM.AX,stockanalysis,2023-06-30,135888000.0,AUD,https://stockanalysis.com/quote/asx/OBM/financials/
+OBM.AX,stockanalysis,2022-06-30,154261000.0,AUD,https://stockanalysis.com/quote/asx/OBM/financials/
+OBM.AX,yahoo,2026-06-30,807499000.0,AUD,
+OBM.AX,yahoo,2024-06-30,214236000.0,AUD,
+OBM.AX,yahoo,2023-06-30,135888000.0,AUD,
+OBM.AX,yahoo,2022-06-30,154261000.0,AUD,
+OLA.TO,stockanalysis,2025-12-31,1057881000.0,USD,https://stockanalysis.com/quote/tsx/OLA/financials/
+OLA.TO,stockanalysis,2024-12-31,343918000.0,USD,https://stockanalysis.com/quote/tsx/OLA/financials/
+OLA.TO,stockanalysis,2023-12-31,233643000.0,USD,https://stockanalysis.com/quote/tsx/OLA/financials/
+OLA.TO,stockanalysis,2022-12-31,193230000.0,USD,https://stockanalysis.com/quote/tsx/OLA/financials/
+OLA.TO,stockanalysis,2021-12-31,4123999.999999999,USD,https://stockanalysis.com/quote/tsx/OLA/financials/
+OLA.TO,yahoo,2025-12-31,1057881000.0,USD,
+OLA.TO,yahoo,2024-12-31,343918000.0,USD,
+OLA.TO,yahoo,2023-12-31,233643000.0,USD,
+OLA.TO,yahoo,2022-12-31,193230000.0,USD,
+PNR.AX,stockanalysis,2025-06-30,357302451.0,AUD,https://stockanalysis.com/quote/asx/PNR/financials/
+PNR.AX,stockanalysis,2024-06-30,229431930.0,AUD,https://stockanalysis.com/quote/asx/PNR/financials/
+PNR.AX,stockanalysis,2023-06-30,98544119.0,AUD,https://stockanalysis.com/quote/asx/PNR/financials/
+PNR.AX,stockanalysis,2022-06-30,73520853.0,AUD,https://stockanalysis.com/quote/asx/PNR/financials/
+PNR.AX,stockanalysis,2021-06-30,87790363.0,AUD,https://stockanalysis.com/quote/asx/PNR/financials/
+PNR.AX,yahoo,2025-06-30,357302451.0,AUD,
+PNR.AX,yahoo,2024-06-30,229431930.0,AUD,
+PNR.AX,yahoo,2023-06-30,98544119.0,AUD,
+PNR.AX,yahoo,2022-06-30,73520853.0,AUD,
+IAU.TO,stockanalysis,2025-12-31,95193000.0,USD,https://stockanalysis.com/quote/tsx/IAU/financials/
+IAU.TO,stockanalysis,2024-12-31,50335000.0,USD,https://stockanalysis.com/quote/tsx/IAU/financials/
+IAU.TO,stockanalysis,2023-12-31,54910000.0,USD,https://stockanalysis.com/quote/tsx/IAU/financials/
+IAU.TO,stockanalysis,2022-12-31,36958000.0,USD,https://stockanalysis.com/quote/tsx/IAU/financials/
+IAU.TO,stockanalysis,2021-12-31,,USD,https://stockanalysis.com/quote/tsx/IAU/financials/
+IAU.TO,yahoo,2025-12-31,95193000.0,USD,
+IAU.TO,yahoo,2024-12-31,50335000.0,USD,
+IAU.TO,yahoo,2023-12-31,54910000.0,USD,
+IAU.TO,yahoo,2022-12-31,36958000.0,USD,
+PSAB.JK,stockanalysis,2025-12-31,288750510.0,USD,https://stockanalysis.com/quote/idx/PSAB/financials/
+PSAB.JK,stockanalysis,2024-12-31,236010879.0,USD,https://stockanalysis.com/quote/idx/PSAB/financials/
+PSAB.JK,stockanalysis,2023-12-31,170145810.0,USD,https://stockanalysis.com/quote/idx/PSAB/financials/
+PSAB.JK,stockanalysis,2022-12-31,100271666.0,USD,https://stockanalysis.com/quote/idx/PSAB/financials/
+PSAB.JK,stockanalysis,2021-12-31,237147146.0,USD,https://stockanalysis.com/quote/idx/PSAB/financials/
+PSAB.JK,yahoo,2025-12-31,288750510.0,USD,
+PSAB.JK,yahoo,2024-12-31,236010879.0,USD,
+PSAB.JK,yahoo,2023-12-31,170145810.0,USD,
+PSAB.JK,yahoo,2022-12-31,100271666.0,USD,
+RMS.AX,stockanalysis,2026-06-30,1032825000.0,AUD,https://stockanalysis.com/quote/asx/RMS/financials/
+RMS.AX,stockanalysis,2025-06-30,1203369000.0,AUD,https://stockanalysis.com/quote/asx/RMS/financials/
+RMS.AX,stockanalysis,2024-06-30,882572000.0,AUD,https://stockanalysis.com/quote/asx/RMS/financials/
+RMS.AX,stockanalysis,2023-06-30,631339000.0,AUD,https://stockanalysis.com/quote/asx/RMS/financials/
+RMS.AX,stockanalysis,2022-06-30,603891000.0,AUD,https://stockanalysis.com/quote/asx/RMS/financials/
+RMS.AX,yahoo,2024-06-30,882510000.0,AUD,
+RMS.AX,yahoo,2023-06-30,631203000.0,AUD,
+RMS.AX,yahoo,2022-06-30,603559000.0,AUD,
+RRL.AX,stockanalysis,2026-06-30,2349099000.0,AUD,https://stockanalysis.com/quote/asx/RRL/financials/
+RRL.AX,stockanalysis,2025-06-30,1647412000.0,AUD,https://stockanalysis.com/quote/asx/RRL/financials/
+RRL.AX,stockanalysis,2024-06-30,1262814000.0,AUD,https://stockanalysis.com/quote/asx/RRL/financials/
+RRL.AX,stockanalysis,2023-06-30,1133732000.0,AUD,https://stockanalysis.com/quote/asx/RRL/financials/
+RRL.AX,stockanalysis,2022-06-30,1015698000.0,AUD,https://stockanalysis.com/quote/asx/RRL/financials/
+RRL.AX,yahoo,2026-06-30,2349099000.0,AUD,
+RRL.AX,yahoo,2025-06-30,1647412000.0,AUD,
+RRL.AX,yahoo,2024-06-30,1262814000.0,AUD,
+RRL.AX,yahoo,2023-06-30,1133732000.0,AUD,
+RSG.AX,stockanalysis,2025-12-31,865600000.0,USD,https://stockanalysis.com/quote/asx/RSG/financials/
+RSG.AX,stockanalysis,2024-12-31,801000000.0,USD,https://stockanalysis.com/quote/asx/RSG/financials/
+RSG.AX,stockanalysis,2023-12-31,631073000.0,USD,https://stockanalysis.com/quote/asx/RSG/financials/
+RSG.AX,stockanalysis,2022-12-31,651129000.0,USD,https://stockanalysis.com/quote/asx/RSG/financials/
+RSG.AX,stockanalysis,2021-12-31,549242000.0,USD,https://stockanalysis.com/quote/asx/RSG/financials/
+RSG.AX,yahoo,2025-12-31,865600000.0,USD,
+RSG.AX,yahoo,2024-12-31,800973000.0,USD,
+RSG.AX,yahoo,2023-12-31,631073000.0,USD,
+RSG.AX,yahoo,2022-12-31,651129000.0,USD,
+2259.HK,stockanalysis,2025-12-31,5383480000.0,USD,https://stockanalysis.com/quote/hkg/2259/financials/
+2259.HK,stockanalysis,2024-12-31,2989935000.0,USD,https://stockanalysis.com/quote/hkg/2259/financials/
+2259.HK,stockanalysis,2023-12-31,2262365000.0,USD,https://stockanalysis.com/quote/hkg/2259/financials/
+2259.HK,stockanalysis,2022-12-31,1817981000.0,USD,https://stockanalysis.com/quote/hkg/2259/financials/
+2259.HK,yahoo,2025-12-31,5383480000.0,USD,
+2259.HK,yahoo,2024-12-31,2989935000.0,USD,
+2259.HK,yahoo,2023-12-31,2262365000.0,USD,
+2259.HK,yahoo,2022-12-31,1817981000.0,USD,
+SPA.V,yahoo,2025-12-31,0.0,CAD,
+SPA.V,yahoo,2024-12-31,0.0,CAD,
+SPA.V,yahoo,2023-12-31,0.0,CAD,
+SPA.V,yahoo,2022-12-31,0.0,CAD,
+SSRM,stockanalysis,2025-12-31,1629637000.0,USD,https://stockanalysis.com/stocks/ssrm/financials/
+SSRM,stockanalysis,2024-12-31,995618000.0,USD,https://stockanalysis.com/stocks/ssrm/financials/
+SSRM,stockanalysis,2023-12-31,1426927000.0,USD,https://stockanalysis.com/stocks/ssrm/financials/
+SSRM,stockanalysis,2022-12-31,1148033000.0,USD,https://stockanalysis.com/stocks/ssrm/financials/
+SSRM,stockanalysis,2021-12-31,1474199000.0,USD,https://stockanalysis.com/stocks/ssrm/financials/
+SSRM,yahoo,2025-12-31,1629637000.0,USD,
+SSRM,yahoo,2024-12-31,995618000.0,USD,
+SSRM,yahoo,2023-12-31,1426927000.0,USD,
+SSRM,yahoo,2022-12-31,1148033000.0,USD,
+STLR.TO,yahoo,2025-12-31,0.0,CAD,
+STLR.TO,yahoo,2024-12-31,0.0,CAD,
+STLR.TO,yahoo,2023-12-31,0.0,CAD,
+STLR.TO,yahoo,2022-12-31,0.0,CAD,
+VAU.AX,stockanalysis,2026-06-30,1926607000.0,AUD,https://stockanalysis.com/quote/asx/VAU/financials/
+VAU.AX,stockanalysis,2025-06-30,1432098000.0,AUD,https://stockanalysis.com/quote/asx/VAU/financials/
+VAU.AX,stockanalysis,2024-06-30,620002000.0,AUD,https://stockanalysis.com/quote/asx/VAU/financials/
+VAU.AX,stockanalysis,2023-06-30,422745000.0,AUD,https://stockanalysis.com/quote/asx/VAU/financials/
+VAU.AX,stockanalysis,2022-06-30,164962000.0,AUD,https://stockanalysis.com/quote/asx/VAU/financials/
+VAU.AX,yahoo,2026-06-30,1926607000.0,AUD,
+VAU.AX,yahoo,2024-06-30,620002000.0,AUD,
+VAU.AX,yahoo,2023-06-30,422745000.0,AUD,
+VAU.AX,yahoo,2022-06-30,162899000.0,AUD,
+WDO.TO,stockanalysis,2025-12-31,914325000.0,CAD,https://stockanalysis.com/quote/tsx/WDO/financials/
+WDO.TO,stockanalysis,2024-12-31,558184000.0,CAD,https://stockanalysis.com/quote/tsx/WDO/financials/
+WDO.TO,stockanalysis,2023-12-31,333173000.0,CAD,https://stockanalysis.com/quote/tsx/WDO/financials/
+WDO.TO,stockanalysis,2022-12-31,265483000.0,CAD,https://stockanalysis.com/quote/tsx/WDO/financials/
+WDO.TO,stockanalysis,2021-12-31,262906999.99999997,CAD,https://stockanalysis.com/quote/tsx/WDO/financials/
+WDO.TO,yahoo,2025-12-31,914325000.0,CAD,
+WDO.TO,yahoo,2024-12-31,558184000.0,CAD,
+WDO.TO,yahoo,2023-12-31,333173000.0,CAD,
+WDO.TO,yahoo,2022-12-31,265483000.0,CAD,
+WAF.AX,stockanalysis,2025-12-31,1543000000.0,AUD,https://stockanalysis.com/quote/asx/WAF/financials/
+WAF.AX,stockanalysis,2024-12-31,730000000.0,AUD,https://stockanalysis.com/quote/asx/WAF/financials/
+WAF.AX,stockanalysis,2023-12-31,661225000.0,AUD,https://stockanalysis.com/quote/asx/WAF/financials/
+WAF.AX,stockanalysis,2022-12-31,608228000.0,AUD,https://stockanalysis.com/quote/asx/WAF/financials/
+WAF.AX,stockanalysis,2021-12-31,712140000.0,AUD,https://stockanalysis.com/quote/asx/WAF/financials/
+WAF.AX,yahoo,2025-12-31,1533800000.0,AUD,
+WAF.AX,yahoo,2024-12-31,724368000.0,AUD,
+WAF.AX,yahoo,2023-12-31,658815000.0,AUD,
+WAF.AX,yahoo,2022-12-31,606134000.0,AUD,
+WGX.AX,stockanalysis,2026-06-30,2440893000.0,AUD,https://stockanalysis.com/quote/asx/WGX/financials/
+WGX.AX,stockanalysis,2025-06-30,1360299000.0,AUD,https://stockanalysis.com/quote/asx/WGX/financials/
+WGX.AX,stockanalysis,2024-06-30,716473000.0,AUD,https://stockanalysis.com/quote/asx/WGX/financials/
+WGX.AX,stockanalysis,2023-06-30,656651618.0,AUD,https://stockanalysis.com/quote/asx/WGX/financials/
+WGX.AX,stockanalysis,2022-06-30,647576618.0,AUD,https://stockanalysis.com/quote/asx/WGX/financials/
+WGX.AX,yahoo,2024-06-30,716472565.0,AUD,
+WGX.AX,yahoo,2023-06-30,654371234.0,AUD,
+WGX.AX,yahoo,2022-06-30,647576618.0,AUD,
