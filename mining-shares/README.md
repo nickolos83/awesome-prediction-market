@@ -31,3 +31,14 @@ Prices are **as traded**. Yahoo rescales history after splits, bonus issues, sto
 The build undoes that: it uses Yahoo's split data plus the demerger factors in `HIDDEN_ADJUSTMENTS`
 (BHP–Woodside 2022, Anglo American–Thungela 2021 and Valterra 2025). LSE prices are in pence (GBp).
 The forward price reflects carry (interest minus dividends) only. It is not a forecast.
+
+## Revenue workbooks
+
+`mining_revenue_2017_2026.xlsx` (majors) and `gold_miners_revenue_2017_2026.xlsx` (gold miners):
+annual revenue in millions of the reporting currency (**Revenue**), converted at the fiscal-year average FX rate
+(**Revenue USD**, formulas), the FX rates used, and a **Verification** tab comparing StockAnalysis with Yahoo Finance.
+Free sources keep only the last ~5 fiscal years, so 2017-2020 are mostly blank. SEC EDGAR blocks GitHub's runners,
+so it could not be used for older years.
+
+Data: `fetch_revenue.py` (GitHub Actions, `.github/workflows/mining-revenue.yml`) -> `revenue/`.
+Build: `python build_revenue.py majors` / `python build_revenue.py gold`.
