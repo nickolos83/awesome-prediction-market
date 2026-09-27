@@ -37,9 +37,16 @@ def year_end(df: pd.DataFrame, ticker: str, source: str) -> list[dict]:
 
 
 def nasdaq(ticker: str, symbol: str) -> list[dict]:
-    url = (f"https://api.nasdaq.com/api/quote/{symbol}/historical?assetclass=stocks"
-           f"&fromdate=2016-12-01&todate=2026-12-31&limit=9999")
-    rows = requests.get(url, headers=UA, timeout=30).json()["data"]["tradesTable"]["rows"]
+    rows = None
+    for asset in ("stocks", "etf"):
+        url = (f"https://api.nasdaq.com/api/quote/{symbol}/historical?assetclass={asset}"
+               f"&fromdate=2016-12-01&todate=2026-12-31&limit=9999")
+        data = requests.get(url, headers=UA, timeout=30).json().get("data")
+        if data and data.get("tradesTable", {}).get("rows"):
+            rows = data["tradesTable"]["rows"]
+            break
+    if not rows:
+        raise ValueError("no Nasdaq history")
     df = pd.DataFrame(rows)
     df = pd.DataFrame({"date": pd.to_datetime(df.date).dt.date,
                        "close": df.close.str.replace(r"[$,]", "", regex=True).astype(float)})
