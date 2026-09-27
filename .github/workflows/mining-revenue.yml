@@ -3,7 +3,7 @@ name: Mining revenue data
 on:
   push:
     branches: [claude/mining-shares-2017-2026-jxgczv]
-    paths: [mining-shares/fetch_revenue.py, .github/workflows/mining-revenue.yml]
+    paths: [mining-shares/fetch_revenue.py, mining-shares/probe_sa.py, .github/workflows/mining-revenue.yml]
   workflow_dispatch:
 
 permissions:
@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install yfinance pandas requests
-      - run: python mining-shares/fetch_revenue.py
+      - run: python mining-shares/probe_sa.py
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
