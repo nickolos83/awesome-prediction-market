@@ -38,11 +38,16 @@ REVENUE_TAGS = [
 
 
 def sec_cik_map() -> dict:
+    errors = []
     r = requests.get("https://www.sec.gov/files/company_tickers.json", headers=SEC_UA, timeout=60)
-    if r.status_code != 200:
-        raise ValueError(f"HTTP {r.status_code}: {r.text[:200]!r}")
-    data = r.json()
-    return {v["ticker"].upper(): int(v["cik_str"]) for v in data.values()}
+    if r.status_code == 200 and r.text.lstrip().startswith("{"):
+        return {v["ticker"].upper(): int(v["cik_str"]) for v in r.json().values()}
+    errors.append(f"company_tickers.json HTTP {r.status_code}: {r.text[:300]!r}")
+    r = requests.get("https://www.sec.gov/include/ticker.txt", headers=SEC_UA, timeout=60)
+    if r.status_code == 200 and "\t" in r.text[:200]:
+        return {t.upper(): int(c) for t, c in (line.split("\t") for line in r.text.split("\n") if "\t" in line)}
+    errors.append(f"ticker.txt HTTP {r.status_code}: {r.text[:300]!r}")
+    raise ValueError(" | ".join(errors))
 
 
 def sec_revenue(ticker: str, cik: int) -> list[dict]:
@@ -93,6 +98,7 @@ def main() -> None:
         ciks = sec_cik_map()
     except Exception as e:
         print("SEC ticker map failed:", e)
+        (OUT / "sec_error.txt").write_text(str(e))
         ciks = {}
     for name, file in DATASETS.items():
         companies = pd.read_csv(HERE / file, dtype=str, keep_default_na=False)
