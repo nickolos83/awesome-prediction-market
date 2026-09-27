@@ -17,7 +17,8 @@ import yfinance as yf
 
 HERE = Path(__file__).parent
 OUT = HERE / "revenue"
-SEC_UA = {"User-Agent": "mining-shares research (github actions) research-bot@example.com"}
+SEC_UA = {"User-Agent": "MiningSharesResearch github-actions@users.noreply.github.com",
+          "Accept-Encoding": "gzip, deflate"}
 DATASETS = {"majors": "companies.csv", "gold": "companies_gold.csv"}
 # US listing used to find a company in SEC EDGAR when the primary ticker is not a US one.
 SEC_TICKER = {
@@ -37,7 +38,10 @@ REVENUE_TAGS = [
 
 
 def sec_cik_map() -> dict:
-    data = requests.get("https://www.sec.gov/files/company_tickers.json", headers=SEC_UA, timeout=60).json()
+    r = requests.get("https://www.sec.gov/files/company_tickers.json", headers=SEC_UA, timeout=60)
+    if r.status_code != 200:
+        raise ValueError(f"HTTP {r.status_code}: {r.text[:200]!r}")
+    data = r.json()
     return {v["ticker"].upper(): int(v["cik_str"]) for v in data.values()}
 
 
