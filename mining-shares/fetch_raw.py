@@ -16,13 +16,15 @@ RAW = HERE / "raw"
 START = "2016-12-01"
 
 # Second listings used only to cross-check the primary ticker.
-CROSS_CHECK = ["ABX.TO", "NGLOY", "AAUKY", "601899.SS", "BHP", "RIO", "VALE", "SCCO"]
+CROSS_CHECK = ["ABX.TO", "NGLOY", "601899.SS", "BHP", "RIO", "VALE", "SCCO"]
 FX = {"CAD": "CAD=X", "AUD": "AUD=X", "GBP": "GBP=X", "MXN": "MXN=X", "BRL": "BRL=X",
       "SAR": "SAR=X", "HKD": "HKD=X", "CNY": "CNY=X", "IDR": "IDR=X"}
 
 
 def history(ticker: str) -> pd.DataFrame:
     h = yf.Ticker(ticker).history(start=START, auto_adjust=False, actions=True)
+    if h.empty:
+        return h
     h.index = h.index.tz_localize(None).date
     h.index.name = "date"
     return h
