@@ -3,7 +3,7 @@ name: Mining shares data
 on:
   push:
     branches: [claude/mining-shares-2017-2026-jxgczv]
-    paths: [mining-shares/fetch_raw.py, mining-shares/companies_gold.csv, .github/workflows/mining-shares.yml]
+    paths: [mining-shares/fetch_raw.py, mining-shares/fetch_verify.py, mining-shares/companies_gold.csv, .github/workflows/mining-shares.yml]
   workflow_dispatch:
 
 permissions:
@@ -19,6 +19,8 @@ jobs:
           python-version: "3.12"
       - run: pip install yfinance pandas openpyxl requests
       - run: python mining-shares/fetch_raw.py gold
+      - run: python mining-shares/fetch_verify.py gold
+        continue-on-error: true
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"

@@ -1,4 +1,9 @@
-"""Build mining_shares_2017_2026.xlsx from the data in raw/ (no internet needed).
+"""Build a workbook from a dataset's raw data (no internet needed).
+
+Usage: python build_workbook.py [majors|gold]
+  majors: companies.csv + raw/      -> mining_shares_2017_2026.xlsx
+  gold:   companies_gold.csv + raw_gold/ + manual_prices_gold.csv
+                                    -> gold_miners_2017_2026.xlsx
 
 Prices are shown as they actually traded ("as-traded"). Yahoo serves history
 rescaled after splits, bonus issues, stock dividends and demergers; this script
@@ -17,6 +22,7 @@ Forward price (USD):   F / X_fwd   (pence are divided by 100 first)
 import math
 import re
 import shutil
+import sys
 import zipfile
 from pathlib import Path
 
@@ -27,20 +33,39 @@ from openpyxl.styles import Font, PatternFill
 from openpyxl.utils import get_column_letter
 
 HERE = Path(__file__).parent
-RAW = HERE / "raw"
+RAW = HERE / "raw"  # set by configure()
 FIRST_YEAR, LAST_YEAR = 2017, 2026
 YEARS = list(range(FIRST_YEAR, LAST_YEAR + 1))
 HORIZON = 2
 
 # Rescaling Yahoo applied that is not listed in its split data (demergers paid
-# in shares). Each entry: prices before `date` were multiplied by `factor`.
-# Factors were recovered from the exchange tick size and checked against
-# known closes (e.g. Anglo 29-Dec-2023 = 1970.6p, BHP 29-Dec-2017 = A$29.57).
-# Tickers listed here ignore Yahoo's split data.
+# in shares, rights issues). Each entry: prices before `date` were multiplied
+# by `factor` (cumulative, on top of any recorded splits). Factors were
+# recovered from the exchange tick size and checked against known closes
+# (e.g. Anglo 29-Dec-2023 = 1970.6p, BHP 29-Dec-2017 = A$29.57).
 HIDDEN_ADJUSTMENTS = {
-    "BHP.AX": [("2022-05-25", 0.89041)],                       # Woodside in-specie
-    "AAL.L": [("2021-06-07", 0.97640), ("2025-06-02", 0.98093)],  # Thungela; Valterra + consolidation
+    "majors": {
+        "BHP.AX": [("2022-05-25", 0.89041)],                          # Woodside in-specie
+        "AAL.L": [("2021-06-07", 0.97640), ("2025-06-02", 0.98093)],  # Thungela; Valterra + consolidation
+    },
+    "gold": {
+        "SBM.AX": [("2019-05-17", 0.84304), ("2023-07-06", 0.87054)],  # 2019 raise; Genesis in-specie 2023
+        "ALK.AX": [("2019-08-14", 0.83129), ("2020-07-20", 0.95870)],  # 2019 raise; ASM demerger 2020
+        "RRL.AX": [("2021-04-15", 0.96366)],                           # 2021 entitlement offer
+        "RSG.AX": [("2022-11-14", 0.89597)],                           # 2022 entitlement offer
+        "VAU.AX": [("2021-03-19", 0.97473)],                           # Red 5 2021 entitlement offer
+        "LYC.AX": [("2020-08-19", 0.98635)],                           # 2020 raise
+        "GMD.AX": [("2019-08-14", 0.93160), ("2020-06-26", 0.94994), ("2021-11-25", 0.98109)],
+        "OBM.AX": [("2020-07-07", 0.90850), ("2022-02-24", 0.91749)],  # pre-2019 (Eastern Goldfields) from manual prices
+    },
 }
+# Recorded splits that are already part of a HIDDEN_ADJUSTMENTS factor.
+IGNORE_SPLITS = {"AAL.L"}
+DATASETS = {
+    "majors": ("companies.csv", "raw", "mining_shares_2017_2026", None),
+    "gold": ("companies_gold.csv", "raw_gold", "gold_miners_2017_2026", "manual_prices_gold.csv"),
+}
+DATASET = "majors"
 
 # Approximate year-end 2-year government yields in % (Saudi Arabia: SAIBOR-style
 # proxy). 2026 repeats 2025 until a real year-end figure exists.
@@ -55,6 +80,9 @@ TWO_YEAR_YIELD = {
     "HKD": [1.30, 1.80, 1.70, 0.20, 0.60, 4.00, 3.60, 3.40, 2.60],
     "CNY": [3.50, 2.70, 2.60, 2.70, 2.30, 2.30, 2.20, 1.10, 1.40],
     "IDR": [5.80, 7.70, 5.70, 4.10, 3.90, 5.90, 6.40, 6.90, 5.00],
+    "ZAR": [7.00, 7.30, 6.90, 4.50, 5.60, 8.00, 8.20, 7.60, 7.00],
+    "SEK": [-0.60, -0.50, -0.30, -0.30, 0.30, 2.70, 2.90, 2.00, 1.90],
+    "EUR": [-0.60, -0.60, -0.60, -0.70, -0.60, 2.75, 2.40, 2.10, 2.10],
 }
 CURRENCIES = list(TWO_YEAR_YIELD)
 
@@ -63,18 +91,19 @@ BOLD = Font(name="Arial", size=10, bold=True)
 BLUE = Font(name="Arial", size=10, color="0000FF")
 GREEN = Font(name="Arial", size=10, color="008000")
 CORRECTED = PatternFill("solid", fgColor="FFF2CC")
+MANUAL = PatternFill("solid", fgColor="DDEBF7")
 HEADER = PatternFill("solid", fgColor="D9E1F2")
 
 
 def as_traded_factor(ticker: str, d: pd.DataFrame) -> pd.Series:
     """Multiplier turning Yahoo's rescaled prices into as-traded prices."""
-    if ticker in HIDDEN_ADJUSTMENTS:
-        f = pd.Series(1.0, index=d.index)
-        for date, factor in reversed(HIDDEN_ADJUSTMENTS[ticker]):
-            f[d.index < pd.Timestamp(date)] = 1 / factor
+    f = pd.Series(1.0, index=d.index)
+    for date, factor in reversed(HIDDEN_ADJUSTMENTS[DATASET].get(ticker, [])):
+        f[d.index < pd.Timestamp(date)] = 1 / factor
+    if ticker in IGNORE_SPLITS:
         return f
     splits = d["Stock Splits"].fillna(0).replace(0, 1)
-    return splits[::-1].cumprod()[::-1].shift(-1).fillna(1)
+    return f * splits[::-1].cumprod()[::-1].shift(-1).fillna(1)
 
 
 def yearly(prices: pd.DataFrame, ticker: str) -> pd.DataFrame:
@@ -82,6 +111,8 @@ def yearly(prices: pd.DataFrame, ticker: str) -> pd.DataFrame:
     d = d[d.index.year >= FIRST_YEAR].dropna(subset=["Close"])
     f = as_traded_factor(ticker, d)
     rows = []
+    if d.empty:
+        return pd.DataFrame(columns=["close", "close_yahoo_adjusted", "dividend_yield"])
     for year, y in d.groupby(d.index.year):
         fy = f.loc[y.index]
         close_adj = y.Close.iloc[-1]
@@ -122,14 +153,34 @@ def set_widths(ws, widths: dict) -> None:
         ws.column_dimensions[col].width = w
 
 
+def load_manual(path: Path | None) -> pd.DataFrame:
+    """Year-end closes researched by hand (delisted stocks, corrections)."""
+    if path is None or not path.exists():
+        return pd.DataFrame(columns=["ticker", "year", "close", "date", "source"])
+    return pd.read_csv(path, dtype={"ticker": str})
+
+
 def main() -> None:
-    companies = pd.read_csv(HERE / "companies.csv")
+    global RAW, DATASET
+    DATASET = sys.argv[1] if len(sys.argv) > 1 else "majors"
+    companies_file, raw_dir, out_name, manual_file = DATASETS[DATASET]
+    RAW = HERE / raw_dir
+    companies = pd.read_csv(HERE / companies_file)
     listed = (companies.dropna(subset=["ticker"]).drop_duplicates("ticker")
               .sort_values("ticker").reset_index(drop=True))
     prices = pd.read_csv(RAW / "prices.csv", parse_dates=["date"])
     targets = pd.read_csv(RAW / "targets.csv").set_index("ticker")
     fx_ye = fx_year_end()
     data = {t: yearly(prices, t) for t in listed.ticker}
+    manual = load_manual(HERE / manual_file if manual_file else None)
+    manual_cells = {}
+    for m in manual.itertuples(index=False):
+        d = data[m.ticker]
+        d.loc[int(m.year), "close"] = float(m.close)
+        if "dividend_yield" in d and pd.isna(d.loc[int(m.year)].get("dividend_yield")):
+            d.loc[int(m.year), "dividend_yield"] = float("nan")
+        manual_cells[(m.ticker, int(m.year))] = f"Researched close ({m.date}). Source: {m.source}"
+        data[m.ticker] = d.sort_index()
 
     wb = Workbook()
     n = len(listed)
