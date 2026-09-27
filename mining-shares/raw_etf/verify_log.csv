@@ -1,2 +1,2 @@
 ticker,source,years,error
-PICK,nasdaq,0,'NoneType' object is not subscriptable
+PICK,nasdaq,11,
