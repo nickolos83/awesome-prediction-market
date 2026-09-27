@@ -1,0 +1,82 @@
+ticker,source,years,error
+AUMB.V,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+AUMB.V,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMA2QBO41L4cYIAFGq2YQ==&cid=70aHMJpLwXmY79Apl'"
+AGI.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+AGI.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAw9u7PBg4yO4AFGq2YQ==&cid=2dqjqHHlEX~pIa7Bo'"
+AAUC.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+AAUC.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAdNRu2niC6OMAFGq2YQ==&cid=o4ZDTvSb9h8iuv~yV'"
+AU,nasdaq,11,
+AU,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAKMQj1VPgUWYAFGq2YQ==&cid=gg5zUuauMs30WPgvN'"
+AR.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+AR.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAofjJmZZKLZgAFGq2YQ==&cid=he_Ph8ZmqHYgysfI3'"
+SBM.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAPQWcR5N8lRgAFGq2YQ==&cid=k_yzVu3SdEZlRuD8j'"
+BTO.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+BTO.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMA6qw1ZqawVbMAFGq2YQ==&cid=wy569S~78jc8yKQ8f'"
+OGG.V,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+OGG.V,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAEfcWh8hmkjoAFGq2YQ==&cid=IZveJyOJgkDZblTZi'"
+TSK.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+TSK.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAMpZnOUqpwtEAFGq2YQ==&cid=BHwHKxOmhiin3Ce7C'"
+CXB.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+CXB.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAxuAxocj_a4EAFGq2YQ==&cid=gFjMSmy9TV_YCp4F1'"
+CYL.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMA3hR5haLC7XsAFGq2YQ==&cid=yLLsFdjicrWxK~~oC'"
+CG.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+CG.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAz4jDn3AbNgAAFGq2YQ==&cid=AN_0VORwK_B35X4_T'"
+CERT.V,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+CERT.V,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAtGCIaZLbAr0AFGq2YQ==&cid=hitv7Bp3HnwPC_wNx'"
+ELD.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+ELD.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMA7HvDfJEiguIAFGq2YQ==&cid=bH3UDTmQ4GWGaz~g6'"
+EQX.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+EQX.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAWPmWdbpRlxwAFGq2YQ==&cid=uktDm3d8yhO4qYQjr'"
+FVI.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+FVI.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAAo9eJF6Yt2YAFGq2YQ==&cid=HGphZJ3d~lbBauhNv'"
+GMD.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMA5QHSZm9WFb0AFGq2YQ==&cid=OIs5oScpxY7baRja5'"
+GFI,nasdaq,11,
+GFI,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAV_5JcDrEQH4AFGq2YQ==&cid=cGquOhNTmd7UbXi1W'"
+GOR.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAXp_yoaLejdkAFGq2YQ==&cid=vHiobppI8mCCJnvjr'"
+BGL.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAfZrbI0nwVRgAFGq2YQ==&cid=lFS_xSDz74R_wtctS'"
+HMY,nasdaq,11,
+HMY,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMA0wqM1uCiy64AFGq2YQ==&cid=pRhYgdij1dhgckWYd'"
+HUM.L,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAdP1XUO0d9voAFGq2YQ==&cid=3YscJRv14svJG9xPF'"
+IMG.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+IMG.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAXUsCoNthB4EAFGq2YQ==&cid=hVjTcLyuZbpvUgGBy'"
+KNT.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+KNT.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAkcjOujM6cyUAFGq2YQ==&cid=CuvhjSq2PbaMYQemF'"
+K.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+K.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAAGPyvXGBycMAFGq2YQ==&cid=qZzeijkptMTloa3NQ'"
+ALK.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAhKYh4muppbsAFGq2YQ==&cid=HjP2DxCARs47wJAP3'"
+MUX,nasdaq,11,
+MUX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAVuz45_RGg3sAFGq2YQ==&cid=9x2geDv8xo_zVnztS'"
+ASE.V,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+ASE.V,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAxxEsjGxVYtIAFGq2YQ==&cid=xZp9TYsTY~LwRv_Vg'"
+MSA.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+MSA.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAznjTJKBuF4kAFGq2YQ==&cid=VfqrtMzwpc5eVYfQ9'"
+LYC.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAYid3_MNsr8wAFGq2YQ==&cid=oxpqd31gLrXfc954a'"
+AMRQ.L,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAstSrUliiDlkAFGq2YQ==&cid=kc_xIYtYiwbFK_weY'"
+NFGC.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+NFGC.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAiOMLZTm-eHcAFGq2YQ==&cid=aCVMiNDRUNTBGrezN'"
+OGC.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+OGC.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAF1d12PN3ITkAFGq2YQ==&cid=kO6nUzwtv9SsVUUW~'"
+OBM.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAxt6Q9YLJyrkAFGq2YQ==&cid=kTPC8O1D1bmOCnerM'"
+OLA.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+OLA.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAOhphG05XmUcAFGq2YQ==&cid=05~DBz0Rirnuq1UB6'"
+PNR.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAAW8qfychUMMAFGq2YQ==&cid=DMcPVx_EJpNcZWWsr'"
+IAU.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+IAU.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMA73tYH2oIU80AFGq2YQ==&cid=Hf_gvPL3Q_DzFIspj'"
+PGM.V,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+PGM.V,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAlrycnebbjTQAFGq2YQ==&cid=HPetQTw3j59H4_oKO'"
+RMS.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMApIq8b7CbJIIAFGq2YQ==&cid=6iwZm1~QF0req8au9'"
+RRL.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAUhffWfUEhNYAFGq2YQ==&cid=Q0LpubEPTnOCnsvtE'"
+RSG.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMABXYAZ9hRnp8AFGq2YQ==&cid=Hee89ShGUsobZ23V5'"
+2259.HK,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAxG2Hsg9PNXAAFGq2YQ==&cid=PumsxInp0AsSZeCxj'"
+SPA.V,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+SPA.V,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAnIc6X59IYl8AFGq2YQ==&cid=4olqV4Btlgj9FD2j3'"
+SSRM,nasdaq,11,
+SSRM,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMARsV1EZmOwZIAFGq2YQ==&cid=aJ8Gx2d1nFMl6WSBH'"
+STLR.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+STLR.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAheNZ-bjwgyMAFGq2YQ==&cid=f8sLzYHntGsMdEU1P'"
+VAU.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAjwpxV__zQooAFGq2YQ==&cid=cLkS_0QT4iQeL8svM'"
+WDO.TO,tmx,0,Mixed timezones detected. Pass utc=True in to_datetime or tz='UTC' in DatetimeIndex to convert to a common timezone.
+WDO.TO,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAJBvX1_ruwhwAFGq2YQ==&cid=O4GD1dAtqM~AqSwwj'"
+WAF.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAYqLTrA7L1NIAFGq2YQ==&cid=4gDVS7WP8~KVsKMkG'"
+WGX.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAaaYuZFHB-OYAFGq2YQ==&cid=y63AGlEpS2etMx~0~'"
+WMC.AX,marketwatch,0,"HTTP 401: '{""url"":""https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAF1KSPDxnPK0AFGq2YQ==&cid=z4zPlqY4Bmbo0OMfa'"
