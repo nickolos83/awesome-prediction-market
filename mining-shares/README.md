@@ -1,5 +1,14 @@
 # Mining company share prices 2017-2026 + 2-year forward prices
 
+Two workbooks, same layout:
+- `mining_shares_2017_2026.xlsx`: majors (`companies.csv`, data in `raw/`)
+- `gold_miners_2017_2026.xlsx`: gold miners (`companies_gold.csv`, data in `raw_gold/`, hand-checked
+  closes in `manual_prices_gold.csv`). It has an extra **Verification** tab comparing our year-end closes
+  with TMX Money, CNBC and Nasdaq data (sources independent of Yahoo).
+
+Build: `python build_workbook.py majors` or `python build_workbook.py gold`.
+Data: `fetch_raw.py gold` (Yahoo) and `fetch_verify.py gold` (TMX, CNBC, Nasdaq, Eastmoney) run on GitHub Actions.
+
 - `companies.csv`: maps each entity to its listed parent and Yahoo Finance ticker.
   Codelco, LKAB and Servicio Geológico Colombiano are state-owned or government bodies, so they have no shares.
 - `fetch_raw.py`: downloads daily prices, splits, FX and analyst targets into `raw/` (needs internet;

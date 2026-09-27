@@ -49,7 +49,7 @@ HIDDEN_ADJUSTMENTS = {
         "AAL.L": [("2021-06-07", 0.97640), ("2025-06-02", 0.98093)],  # Thungela; Valterra + consolidation
     },
     "gold": {
-        "SBM.AX": [("2019-05-17", 0.84304), ("2023-07-06", 0.87054)],  # 2019 raise; Genesis in-specie 2023
+        "SBM.AX": [("2019-05-17", 0.42152), ("2023-07-06", 0.43527)],  # 2019 raise; Genesis in-specie 2023
         "ALK.AX": [("2019-08-14", 0.83129), ("2020-07-20", 0.95870)],  # 2019 raise; ASM demerger 2020
         "RRL.AX": [("2021-04-15", 0.96366)],                           # 2021 entitlement offer
         "RSG.AX": [("2022-11-14", 0.89597)],                           # 2022 entitlement offer
@@ -58,6 +58,16 @@ HIDDEN_ADJUSTMENTS = {
         "GMD.AX": [("2019-08-14", 0.93160), ("2020-06-26", 0.94994), ("2021-11-25", 0.98109)],
         "OBM.AX": [("2020-07-07", 0.90850), ("2022-02-24", 0.91749)],  # pre-2019 (Eastern Goldfields) from manual prices
     },
+}
+# Cross-check differences that were investigated and are not errors in our data.
+EXPLAINED = {
+    ("MUX", 2021, "nasdaq"): "Nasdaq labels the 3 Jan 2022 close as 31 Dec 2021; Yahoo 8.87 matches MUX.TO",
+    ("OBM.AX", 2017, "cnbc_adjusted"): "CNBC adjusted series includes a later rights issue; CNBC unadjusted matches",
+    ("OBM.AX", 2018, "cnbc_adjusted"): "CNBC adjusted series includes a later rights issue; CNBC unadjusted matches",
+    ("SBM.AX", 2017, "cnbc_adjusted"): "CNBC adjusted series includes the 2019 capital raise; CNBC unadjusted matches",
+    ("SBM.AX", 2018, "cnbc_adjusted"): "CNBC adjusted series includes the 2019 capital raise; CNBC unadjusted matches",
+    **{("STLR.TO", y, "tmx"): "One price tick apart (C$0.005) on a sub-C$0.40 stock after TMX restatement"
+       for y in (2017, 2018, 2019, 2020)},
 }
 # Recorded splits that are already part of a HIDDEN_ADJUSTMENTS factor.
 IGNORE_SPLITS = {"AAL.L"}
@@ -112,7 +122,8 @@ def yearly(prices: pd.DataFrame, ticker: str) -> pd.DataFrame:
     f = as_traded_factor(ticker, d)
     rows = []
     if d.empty:
-        return pd.DataFrame(columns=["close", "close_yahoo_adjusted", "dividend_yield"])
+        return pd.DataFrame(columns=["last_trading_day", "open", "high", "low", "close", "average_close",
+                                     "dividends_in_year", "dividend_yield", "close_yahoo_adjusted"], dtype=object)
     for year, y in d.groupby(d.index.year):
         fy = f.loc[y.index]
         close_adj = y.Close.iloc[-1]
@@ -161,7 +172,7 @@ def load_manual(path: Path | None) -> pd.DataFrame:
 
 
 def main() -> None:
-    global RAW, DATASET
+    global RAW, DATASET, CURRENCIES
     DATASET = sys.argv[1] if len(sys.argv) > 1 else "majors"
     companies_file, raw_dir, out_name, manual_file = DATASETS[DATASET]
     RAW = HERE / raw_dir
@@ -171,14 +182,14 @@ def main() -> None:
     prices = pd.read_csv(RAW / "prices.csv", parse_dates=["date"])
     targets = pd.read_csv(RAW / "targets.csv").set_index("ticker")
     fx_ye = fx_year_end()
+    CURRENCIES = ["USD"] + [c for c in TWO_YEAR_YIELD if c != "USD" and c in fx_ye.columns]
     data = {t: yearly(prices, t) for t in listed.ticker}
     manual = load_manual(HERE / manual_file if manual_file else None)
     manual_cells = {}
     for m in manual.itertuples(index=False):
         d = data[m.ticker]
         d.loc[int(m.year), "close"] = float(m.close)
-        if "dividend_yield" in d and pd.isna(d.loc[int(m.year)].get("dividend_yield")):
-            d.loc[int(m.year), "dividend_yield"] = float("nan")
+        d.loc[int(m.year), "last_trading_day"] = m.date
         manual_cells[(m.ticker, int(m.year))] = f"Researched close ({m.date}). Source: {m.source}"
         data[m.ticker] = d.sort_index()
 
@@ -271,17 +282,37 @@ def main() -> None:
                 cell = close[f"{year_col[y]}{first + i}"]
                 cell.value = round(float(d.loc[y, "close"]), 4)
                 adj = float(d.loc[y, "close_yahoo_adjusted"])
-                if abs(cell.value / adj - 1) > 0.001:
+                if (c.ticker, y) in manual_cells:
+                    cell.fill = MANUAL
+                    cell.comment = Comment(manual_cells[(c.ticker, y)], "Claude")
+                elif abs(cell.value / adj - 1) > 0.001:
                     cell.fill = CORRECTED
                     cell.comment = Comment(f"As traded. Yahoo shows {adj:.4f} (history rescaled after a "
                                            "split / bonus issue / demerger).", "Claude")
+
+        raw = prices[(prices.ticker == c.ticker) & (prices["Stock Splits"].fillna(0) != 0)]
+        for date, ratio in zip(raw.date, raw["Stock Splits"]):
+            if c.ticker in IGNORE_SPLITS or date.year < FIRST_YEAR:
+                continue
+            n_for_1 = round(1 / ratio if ratio < 1 else ratio, 2)
+            kind = "share consolidation" if ratio < 1 else "split"
+            y = date.year
+            cell = close[f"{year_col[y]}{first + i}"] if y in year_col else None
+            if cell is not None and cell.value is not None:
+                note = (f"{n_for_1:g}-for-1 {kind} on {date.date()}: earlier years are pre-{kind.split()[-1]} "
+                        "prices, so a jump here is not a real price move.")
+                cell.comment = Comment(note if cell.comment is None else cell.comment.text + "\n" + note, "Claude")
+                cell.font = Font(name="Arial", size=10, bold=True)
+        if d.empty:
+            close.cell(first + i, 1).comment = Comment("No free price history found for this delisted stock.",
+                                                       "Claude")
 
     # Dividend yield (data)
     dy = ticker_sheet("Dividend yield", YEARS)
     for i, c in listed.iterrows():
         d = data[c.ticker]
         for y in YEARS:
-            if y in d.index:
+            if y in d.index and not pd.isna(d.loc[y, "dividend_yield"]):
                 cell = dy[f"{year_col[y]}{first + i}"]
                 cell.value = round(float(d.loc[y, "dividend_yield"]), 6)
                 cell.number_format = "0.00%"
@@ -361,18 +392,22 @@ def main() -> None:
             cur = c.currency.replace("GBp", "GBP")
             r = TWO_YEAR_YIELD[cur][min(y - FIRST_YEAR, 8)] / 100
             row = d.loc[y]
-            f = row.close * math.exp((r - row.dividend_yield) * HORIZON)
+            q = 0.0 if pd.isna(row.dividend_yield) else row.dividend_yield
+            f = row.close * math.exp((r - q) * HORIZON)
             later = d.loc[y + HORIZON] if y + HORIZON in d.index else None
             actual = later.close if later is not None else None
             # Error on Yahoo's consistently rescaled series, so a split in between doesn't distort it.
             err = None
-            if later is not None:
-                f_adj = row.close_yahoo_adjusted * math.exp((r - row.dividend_yield) * HORIZON)
+            if later is not None and not pd.isna(row.close_yahoo_adjusted) and not pd.isna(later.close_yahoo_adjusted):
+                f_adj = row.close_yahoo_adjusted * math.exp((r - q) * HORIZON)
                 err = later.close_yahoo_adjusted / f_adj - 1
+            elif later is not None:
+                err = later.close / f - 1
             vals = [c.ticker, c.listed_parent, c.currency, y, row.last_trading_day, row.open, row.high,
                     row.low, row.close, row.average_close, row.dividends_in_year, row.dividend_yield, r, f,
                     y + HORIZON, actual, err]
-            vals = [round(v, 4) if isinstance(v, float) else v for v in vals]
+            vals = [None if isinstance(v, float) and math.isnan(v) else round(v, 4) if isinstance(v, float) else v
+                    for v in vals]
             det.append(vals)
             csv_rows.append(dict(zip(cols, vals)))
     for row in det.iter_rows(min_row=2):
@@ -382,7 +417,7 @@ def main() -> None:
             row[idx].number_format = "0.0%"
     det.freeze_panes = "E2"
     set_widths(det, {"A": 13, "B": 32, "E": 14})
-    pd.DataFrame(csv_rows).to_csv(HERE / "mining_shares_2017_2026.csv", index=False)
+    pd.DataFrame(csv_rows).to_csv(HERE / f"{out_name}.csv", index=False)
 
     # Analyst targets (now)
     at = wb.create_sheet("Analyst targets (now)")
@@ -398,16 +433,72 @@ def main() -> None:
 
     order = ["Entities", "Year-end close", "Year-end close USD", "2y forward", "2y forward USD",
              "Dividend yield", "Rates 2y", "FX year-end", "FX 2y forward", "Detail", "Analyst targets (now)"]
+    if verification_sheet(wb, data, prices):
+        order.append("Verification")
     wb._sheets = [wb[s] for s in order]
     for ws in wb:
         for row in ws.iter_rows():
             for c in row:
                 if c.font == Font():
                     c.font = FONT
-    out = HERE / "mining_shares_2017_2026.xlsx"
+    out = HERE / f"{out_name}.xlsx"
     wb.save(out)
     store_cached_values(out, [ws.title for ws in wb])
     print(f"Wrote {out.name}")
+
+
+def verification_sheet(wb: Workbook, data: dict, prices: pd.DataFrame) -> bool:
+    """Compare our year-end closes with sources independent of Yahoo (raw/verify.csv)."""
+    path = RAW / "verify.csv"
+    if not path.exists():
+        return False
+    v = pd.read_csv(path)
+    v = v[(v.year >= FIRST_YEAR) & v.ticker.isin(data)]
+    # CNBC's BGL-AU is a different security from Bellevue Gold (ASX: BGL).
+    v = v[~((v.ticker == "BGL.AX") & v.source.str.startswith("cnbc"))]
+    p = prices[prices.date.dt.year >= FIRST_YEAR].sort_values("date")
+    restated = p.groupby(["ticker", p.date.dt.year]).Close.last()
+    rows = []
+    for r in v.itertuples():
+        d = data[r.ticker]
+        ours = d.close.get(r.year) if r.year in d.index else None
+        if ours is None or pd.isna(ours):
+            continue
+        yahoo = restated.get((r.ticker, r.year))
+
+        def same(a, b):
+            return b is not None and not pd.isna(b) and (abs(a / b - 1) <= 0.01 or abs(a - b) <= 0.0051)
+        if (r.ticker, r.year, r.source) in EXPLAINED:
+            status = "explained: " + EXPLAINED[(r.ticker, r.year, r.source)]
+        elif same(r.close, ours):
+            status = "match"
+        elif same(r.close, yahoo):
+            status = "match (source restated for a later split/consolidation)"
+        else:
+            status = "MISMATCH"
+        rows.append([r.ticker, r.year, r.source, r.date, r.close, round(float(ours), 4), status])
+    ws = wb.create_sheet("Verification")
+    df = pd.DataFrame(rows, columns=["ticker", "year", "source", "source_date", "source_close", "our_close",
+                                     "status"])
+    counts = df.status.str.split(":").str[0].value_counts()
+    checked = df.ticker.nunique()
+    ws.append(["Cross-check of year-end closes against sources independent of Yahoo Finance"])
+    ws.append([f"{len(df)} comparisons across {checked} tickers: "
+               + ", ".join(f"{k}: {v}" for k, v in counts.items())])
+    unchecked = sorted(t for t, d in data.items() if not d.empty and t not in set(df.ticker))
+    ws.append(["Not independently checked (no second source reachable): " + (", ".join(unchecked) or "none")])
+    ws.append([])
+    ws.append(list(df.columns))
+    style_header(ws, 5)
+    for row in df.sort_values(["status", "ticker", "year"]).itertuples(index=False):
+        ws.append(list(row))
+        if row.status == "MISMATCH":
+            for c in ws[ws.max_row]:
+                c.fill = CORRECTED
+    ws.cell(1, 1).font = BOLD
+    ws.freeze_panes = "A6"
+    set_widths(ws, {"A": 13, "C": 16, "D": 12, "G": 52})
+    return True
 
 
 def store_cached_values(path: Path, sheet_titles: list) -> None:
