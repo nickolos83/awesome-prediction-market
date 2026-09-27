@@ -6,7 +6,8 @@ Writes <raw>/verify.csv: ticker, source, year, date, close (as the source serves
 Sources:
   nasdaq       api.nasdaq.com historical quotes (US listings)
   tmx          TMX Money GraphQL (TSX / TSXV listings)
-  marketwatch  MarketWatch CSV download (ASX, TSX, LSE, HKEX, US)
+  cnbc         CNBC chart API (ASX, LSE, HKEX)
+  eastmoney    Eastmoney kline API, unadjusted (Shanghai, Hong Kong)
 """
 
 import io
@@ -61,7 +62,7 @@ def tmx(ticker: str, symbol: str) -> list[dict]:
     if not data:
         raise ValueError(str(r)[:200])
     df = pd.DataFrame(data)
-    df["date"] = pd.to_datetime(df.dateTime).dt.date
+    df["date"] = pd.to_datetime(df.dateTime, utc=True).dt.tz_convert("America/Toronto").dt.date
     return year_end(df[["date", "close"]], ticker, "tmx")
 
 
@@ -85,6 +86,36 @@ def marketwatch(ticker: str, symbol: str, country: str | None) -> list[dict]:
     return out
 
 
+def cnbc(ticker: str, symbol: str) -> list[dict]:
+    out, err = [], ""
+    for mode in ("unadjusted", "adjusted"):
+        url = (f"https://ts-api.cnbc.com/harmony/app/bars/{symbol}/1D/20161201000000/20261231000000/"
+               f"{mode}/EST5EDT.json")
+        try:
+            bars = requests.get(url, headers=UA, timeout=30).json()["barData"]["priceBars"]
+            df = pd.DataFrame(bars)
+            df = pd.DataFrame({"date": pd.to_datetime(df.tradeTime.astype(str).str[:8]).dt.date,
+                               "close": df.close.astype(float)})
+            out += [{**r, "source": f"cnbc_{mode}"} for r in year_end(df, ticker, "cnbc")]
+        except Exception as e:
+            err += f"{mode}: {str(e)[:80]} "
+    if not out:
+        raise ValueError(err)
+    return out
+
+
+def eastmoney(ticker: str, secid: str) -> list[dict]:
+    url = ("https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=" + secid +
+           "&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55&klt=101&fqt=0&beg=20161201&end=20261231")
+    klines = requests.get(url, headers=UA, timeout=30).json()["data"]["klines"]
+    df = pd.DataFrame([k.split(",")[:3] for k in klines], columns=["date", "open", "close"])
+    df = pd.DataFrame({"date": pd.to_datetime(df.date).dt.date, "close": df.close.astype(float)})
+    return year_end(df, ticker, "eastmoney")
+
+
+CNBC_SUFFIX = {"AX": "-AU", "L": "-GB", "HK": "-HK"}
+
+
 def main() -> None:
     name = sys.argv[1] if len(sys.argv) > 1 else "gold"
     companies_file, raw_dir = DATASETS[name]
@@ -98,8 +129,13 @@ def main() -> None:
             jobs.append(("nasdaq", lambda t=t, b=base: nasdaq(t, b)))
         if suffix in ("TO", "V"):
             jobs.append(("tmx", lambda t=t, b=base: tmx(t, b)))
-        if suffix in MW_COUNTRY or not suffix:
-            jobs.append(("marketwatch", lambda t=t, b=base, s=suffix: marketwatch(t, b, MW_COUNTRY.get(s))))
+        if suffix in CNBC_SUFFIX:
+            sym = (base.lstrip("0") if suffix == "HK" else base) + CNBC_SUFFIX[suffix]
+            jobs.append(("cnbc", lambda t=t, s=sym: cnbc(t, s)))
+        if suffix == "SS":
+            jobs.append(("eastmoney", lambda t=t, b=base: eastmoney(t, "1." + b)))
+        if suffix == "HK":
+            jobs.append(("eastmoney", lambda t=t, b=base: eastmoney(t, "116." + b.zfill(5))))
         for source, job in jobs:
             try:
                 got = job()
