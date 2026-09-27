@@ -1,69 +1,69 @@
 entity,listed_parent,ticker,exchange,currency,cross_check,note
 1911 Gold Corp,1911 Gold Corp,AUMB.V,TSXV,CAD,AUMBF,
 Alamos Gold Inc.,Alamos Gold Inc,AGI.TO,TSX,CAD,AGI,
-Allied Gold South Africa,Allied Gold Corp,AAUC.TO,TSX,CAD,,
+Allied Gold South Africa,Allied Gold Corp,AAUC.TO,TSX,CAD,,Mapped to parent Allied Gold Corp (listed TSX 11 Sep 2023); specific SA entity unconfirmed
 AngloGold Ashanti Limited,AngloGold Ashanti plc,AU,NYSE,USD,ANG.JO,
-Argonaut Gold Corporate Account,Argonaut Gold Inc,AR.TO,TSX,CAD,,
-Atlantic Mining NS Inc.,St Barbara Ltd,SBM.AX,ASX,AUD,,
+Argonaut Gold Corporate Account,Argonaut Gold Inc,AR.TO,TSX,CAD,ARNGF,Argonaut Gold was taken over by Alamos Gold on 12 Jul 2024
+Atlantic Mining NS Inc.,St Barbara Ltd,SBM.AX,ASX,AUD,,Nova Scotia operations; St Barbara bought Atlantic Gold on 19 Jul 2019
 B2Gold Corporation,B2Gold Corp,BTO.TO,TSX,CAD,BTG,
-Barkerville Gold Mines,Osisko Development Corp,ODV.V,TSXV,CAD,BGM.V;OR.TO;ODV,
-Bralorne Gold Mines (Talisker Resources),Talisker Resources Ltd,TSK.TO,TSX,CAD,TSK.CN;TSKFF,
-Calibre Mining Corporation,Calibre Mining Corp,CXB.TO,TSX,CAD,CXBMF,
-Catalyst (Plutonic) Pty Ltd,Catalyst Metals Ltd,CYL.AX,ASX,AUD,,
+Barkerville Gold Mines,Osisko Development Corp,ODV.V,TSXV,CAD,BGM.V;OR.TO;ODV;ODV.TO,Barkerville (BGM.V) until Osisko Gold Royalties bought it on 21 Nov 2019; moved into Osisko Development (listed late 2020)
+Bralorne Gold Mines (Talisker Resources),Talisker Resources Ltd,TSK.TO,TSX,CAD,TSK.CN;TSKFF,Subsidiary of Talisker since 16 Dec 2019
+Calibre Mining Corporation,Calibre Mining Corp,CXB.TO,TSX,CAD,CXBMF,Taken over by Equinox Gold on 17 Jun 2025
+Catalyst (Plutonic) Pty Ltd,Catalyst Metals Ltd,CYL.AX,ASX,AUD,,Plutonic mine; Catalyst bought Superior Gold on 30 Jun 2023
 Centerra Gold Inc.,Centerra Gold Inc,CG.TO,TSX,CAD,CGAU,
-Cerrado Gold - Minera Don Nicolas - Arge,Cerrado Gold Inc,CERT.V,TSXV,CAD,CRDOF,
+Cerrado Gold - Minera Don Nicolas - Arge,Cerrado Gold Inc,CERT.V,TSXV,CAD,CRDOF,Subsidiary of Cerrado Gold since Mar 2020
 Eldorado,Eldorado Gold Corp,ELD.TO,TSX,CAD,EGO,
-Equinox Gold NAM - Leapfrog,Equinox Gold Corp,EQX.TO,TSX,CAD,EQX,
+Equinox Gold NAM - Leapfrog,Equinox Gold Corp,EQX.TO,TSX,CAD,EQX,Equinox Gold North America unit
 Fortuna Mining Corp,Fortuna Mining Corp,FVI.TO,TSX,CAD,FSM,
-Freda Rebecca Gold Mine,,,,,ASA.L,
-G Ex Australia Pty Ltd,,,,,,
+Freda Rebecca Gold Mine,,,,,,No listing. Asa Resource Group (AIM) suspended 2017; mine now held by Kuvimba Mining House (Zimbabwe state)
+G Ex Australia Pty Ltd,,,,,,"No listing found (likely Dynamics G-Ex Pty Ltd, a private geology supplier - unconfirmed)"
 Genesis Minerals Limited,Genesis Minerals Ltd,GMD.AX,ASX,AUD,,
 Gold Fields Limited,Gold Fields Ltd,GFI,NYSE,USD,GFI.JO,
-Gold Road Resources,Gold Road Resources Ltd,GOR.AX,ASX,AUD,,
-Golden Spur Resources Pty Ltd,,,,,,
-Golden Star (Wassa) Ltd,Golden Star Resources Ltd,GSS,NYSE American,USD,GSC.TO;600988.SS,
-Grupo Minero Bacis S.A. de C.V.,,,,,,
+Gold Road Resources,Gold Road Resources Ltd,GOR.AX,ASX,AUD,ELKMF,Taken over by Gold Fields; last traded 26 Sep 2025
+Golden Spur Resources Pty Ltd,Bellevue Gold Ltd,BGL.AX,ASX,AUD,,Subsidiary of Bellevue Gold
+Golden Star (Wassa) Ltd,Chifeng Jilong Gold Mining Co Ltd,600988.SS,SSE,CNY,6693.HK,Golden Star Resources (GSC.TO/GSS) owned Wassa until Chifeng bought it on 28 Jan 2022
+Grupo Minero Bacis S.A. de C.V.,,,,,,Private (Mexico)
 Harmony Gold Mining Company Ltd,Harmony Gold Mining Co Ltd,HMY,NYSE,USD,HAR.JO,
-Hellyer Gold Mines Pty Ltd,,,,,,
-Hummingbird Resources plc.,Hummingbird Resources plc,HUM.L,LSE AIM,GBp,,
+Hellyer Gold Mines Pty Ltd,,,,,,No listing. Parent NQ Minerals (Aquis) went into administration Aug 2021; now privately owned
+Hummingbird Resources plc.,Hummingbird Resources plc,HUM.L,LSE AIM,GBp,,Taken private by Nioko Resources; last traded on AIM 28 Feb 2025
 IAMGOLD,IAMGOLD Corp,IMG.TO,TSX,CAD,IAG,
-"JSC ""AK ALTYNALMAS""",,,,,,
+"JSC ""AK ALTYNALMAS""",,,,,,Private (Kazakhstan); shares registered on KASE but not traded
 K92 Mining Ltd,K92 Mining Inc,KNT.TO,TSX,CAD,KNTNF,
 Kinross Gold Inc.,Kinross Gold Corp,K.TO,TSX,CAD,KGC,
-Lane Xang Minerals Limited (LXML),Chifeng Jilin Gold Mining Co Ltd,600988.SS,SSE,CNY,6693.HK,
-Mandalay Resources – Björkdalsgruvan AB,Mandalay Resources Corp,MND.TO,TSX,CAD,ALK.AX;MNDJF,
-McEwen Mining - Black Fox Mine,McEwen Mining Inc,MUX,NYSE,USD,MUX.TO,
-Mensin Gold Bibiani Limited,Asante Gold Corp,ASE.CN,CSE,CAD,ASGOF,
-Minera Las Cenizas S.A.,,,,,,
-Mineros - Argentina,Mineros SA,MSA.TO,TSX,CAD,,
-Model Earth,,,,,,
+Lane Xang Minerals Limited (LXML),Chifeng Jilin Gold Mining Co Ltd,600988.SS,SSE,CNY,6693.HK,Sepon mine; bought by Chifeng from MMG on 30 Nov 2018
+Mandalay Resources – Björkdalsgruvan AB,Alkane Resources Ltd,ALK.AX,ASX,AUD,ALK.TO;MND.TO,Mandalay Resources (MND.TO) owned Björkdal until its merger with Alkane on 5 Aug 2025
+McEwen Mining - Black Fox Mine,McEwen Mining Inc,MUX,NYSE,USD,MUX.TO,Black Fox bought by McEwen from Primero on 6 Oct 2017
+Mensin Gold Bibiani Limited,Asante Gold Corp,ASE.V,TSXV,CAD,ASE.CN;ASGOF,Subsidiary of Asante Gold since 19 Aug 2021 (bought from Resolute)
+Minera Las Cenizas S.A.,,,,,,Private (Chile)
+Mineros - Argentina,Mineros SA,MSA.TO,TSX,CAD,,Mineros SA (Colombia); TSX listing from 19 Nov 2021. Argentine Gualcamayo mine sold 2023
+Model Earth,,,,,,Private geology consultancy (Perth) - no listing (identity unconfirmed)
 Mt Weld Mining Pty Limited,Lynas Rare Earths Ltd,LYC.AX,ASX,AUD,,
-Nalunaq A/S,Amaroq Minerals Ltd,AMRQ.V,TSXV,CAD,AMRQ.L,
-Navoi Mining & Metallurgy Company (NGMK),,,,,,
-New Found Gold Corp,New Found Gold Corp,NFG.V,TSXV,CAD,NFGC,
-NQM GOLD 2 PTY LTD,,,,,,
-OceanaGold (Philippines) Inc.,OceanaGold Corp,OGC.TO,TSX,CAD,,
+Nalunaq A/S,Amaroq Minerals Ltd,AMRQ.V,TSXV,CAD,AMRQ.L;AEX.V;AMRQ.IC,Subsidiary of Amaroq (formerly AEX Gold)
+Navoi Mining & Metallurgy Company (NGMK),,,,,,"State-owned (Uzbekistan); only Eurobonds listed, IPO paused"
+New Found Gold Corp,New Found Gold Corp,NFG.V,TSXV,CAD,NFGC;NFG.TO,
+NQM GOLD 2 PTY LTD,,,,,,Pajingo mine. Parent Shandong Yulong Gold (601028.SS) from Nov 2022 until it delisted on 27 May 2025; no listed parent now
+OceanaGold (Philippines) Inc.,OceanaGold Corp,OGC.TO,TSX,CAD,OGP.PS;OGC,About 80% owned by OceanaGold; OGPI itself listed on the PSE on 13 May 2024 (OGP.PS)
 Ora Banda Mining Ltd,Ora Banda Mining Ltd,OBM.AX,ASX,AUD,,
-Orla Mining Ltd,Orla Mining Ltd,OLA.TO,TSX,CAD,ORLA,
+Orla Mining Ltd,Orla Mining Ltd,OLA.TO,TSX,CAD,ORLA;OLA.V,
 Pantoro Gold Limited,Pantoro Gold Ltd,PNR.AX,ASX,AUD,,
-Premier Gold Mines USA Inc,i-80 Gold Corp,IAU.TO,TSX,CAD,IAUX;PG.TO,
+Premier Gold Mines USA Inc,i-80 Gold Corp,IAU.TO,TSX,CAD,IAUX;PG.TO,Premier Gold Mines (PG.TO) until Equinox bought it on 7 Apr 2021; since then part of i-80 Gold (listed 13 Apr 2021)
 PT J Resources Nusantara,PT J Resources Asia Pasifik Tbk,PSAB.JK,IDX,IDR,,
-Pure Gold Mining,Pure Gold Mining Inc,PGM.V,TSXV,CAD,LRTNF,
-Qkr Namibia Navachab Gold Mine (Pty) Ltd,,,,,,
+Pure Gold Mining,Pure Gold Mining Inc,PGM.V,TSXV,CAD,LRTNF;PUR.L,CCAA Oct 2022; delisted 2023; now part of West Red Lake Gold
+Qkr Namibia Navachab Gold Mine (Pty) Ltd,,,,,,"Private (QKR Corporation 92.5%, Epangelo 7.5%)"
 Ramelius Resources Limited,Ramelius Resources Ltd,RMS.AX,ASX,AUD,,
 Regis Resources Limited,Regis Resources Ltd,RRL.AX,ASX,AUD,,
-Resolute Corporate Services,Resolute Mining Ltd,RSG.L,LSE,GBp,RSG.AX,
-RG GOLD,,,,,,
-SALINAS GOLD MINERACAO LTDA,,,,,,
-Saudi Gold Refinery Company Ltd,,,,,,
+Resolute Corporate Services,Resolute Mining Ltd,RSG.AX,ASX,AUD,RSG.L,Subsidiary of Resolute Mining
+RG GOLD,Zijin Gold International Co Ltd,2259.HK,HKEX,HKD,2899.HK,Private (Verny Capital/RCF) until Zijin Gold bought it on 13 Oct 2025; Zijin Gold listed 30 Sep 2025
+SALINAS GOLD MINERACAO LTDA,,,,,,Private (Brazil; RiverMet Resource Capital)
+Saudi Gold Refinery Company Ltd,,,,,,Private (Al-Othaim group)
 Spanish Mountain Gold Ltd.,Spanish Mountain Gold Ltd,SPA.V,TSXV,CAD,,
 SSR Mining Inc.,SSR Mining Inc,SSRM,NASDAQ,USD,SSRM.TO,
-Standard Gold de Colombia S.A.S.,,,,,,
+Standard Gold de Colombia S.A.S.,,,,,,Private (Colombia) - no listed parent found
 STLLR Gold Inc.,STLLR Gold Inc,STLR.TO,TSX,CAD,ME.TO,
-Tumad,,,,,,
-Vault Minerals Limited,Vault Minerals Ltd,VAU.AX,ASX,AUD,RED.AX,
-Wahgnion Gold Operations SA,,,,,EDV.TO;EDV.L;TGZ.TO,
+Tumad,,,,,,"Private (Nurol Holding, Turkey)"
+Vault Minerals Limited,Vault Minerals Ltd,VAU.AX,ASX,AUD,RED.AX,Formerly Red 5 (RED.AX); merged with Silver Lake Jun 2024; Genesis Minerals takeover pending (vote late Oct 2026)
+Wahgnion Gold Operations SA,,,,,,"State-owned (Burkina Faso, SOPAMIB) since 2024-25. Earlier owners: Teranga (TGZ.TO) to Feb 2021, Endeavour (EDV) to Jun 2023, Lilium (private)"
 Wesdome Gold Mines Ltd.,Wesdome Gold Mines Ltd,WDO.TO,TSX,CAD,,
 West African Resources Ltd,West African Resources Ltd,WAF.AX,ASX,AUD,,
 Westgold Resources Limited,Westgold Resources Ltd,WGX.AX,ASX,AUD,,
-Wiluna Operations Pty Ltd,Wiluna Mining Corp Ltd,WMC.AX,ASX,AUD,,
+Wiluna Operations Pty Ltd,Wiluna Mining Corp Ltd (formerly Blackham Resources),WMC.AX,ASX,AUD,BLK.AX;WMX.AX,"Parent suspended Jul 2022 (administration), removed from ASX Apr 2024"
