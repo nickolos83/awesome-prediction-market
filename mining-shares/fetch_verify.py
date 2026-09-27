@@ -19,7 +19,8 @@ import pandas as pd
 import requests
 
 HERE = Path(__file__).parent
-DATASETS = {"majors": ("companies.csv", "raw"), "gold": ("companies_gold.csv", "raw_gold")}
+DATASETS = {"majors": ("companies.csv", "raw"), "gold": ("companies_gold.csv", "raw_gold"),
+            "etf": ("companies_etf.csv", "raw_etf")}
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
                     "Chrome/126.0 Safari/537.36",
       "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9"}

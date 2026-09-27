@@ -24,6 +24,7 @@ START = "2016-12-01"
 DATASETS = {
     "majors": ("companies.csv", "raw"),
     "gold": ("companies_gold.csv", "raw_gold"),
+    "etf": ("companies_etf.csv", "raw_etf"),
 }
 FX = {"CAD": "CAD=X", "AUD": "AUD=X", "GBP": "GBP=X", "MXN": "MXN=X", "BRL": "BRL=X",
       "SAR": "SAR=X", "HKD": "HKD=X", "CNY": "CNY=X", "IDR": "IDR=X", "ZAR": "ZAR=X",

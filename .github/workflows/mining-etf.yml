@@ -1,0 +1,31 @@
+name: Mining ETF data
+
+on:
+  push:
+    branches: [claude/mining-shares-2017-2026-jxgczv]
+    paths: [mining-shares/companies_etf.csv, .github/workflows/mining-etf.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance pandas openpyxl requests
+      - run: python mining-shares/fetch_raw.py etf
+      - run: python mining-shares/fetch_verify.py etf
+        continue-on-error: true
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add mining-shares/raw_etf
+          git commit -m "Update raw mining share price data" || echo "No changes"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push

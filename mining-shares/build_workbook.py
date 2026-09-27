@@ -48,6 +48,7 @@ HIDDEN_ADJUSTMENTS = {
         "BHP.AX": [("2022-05-25", 0.89041)],                          # Woodside in-specie
         "AAL.L": [("2021-06-07", 0.97640), ("2025-06-02", 0.98093)],  # Thungela; Valterra + consolidation
     },
+    "etf": {},
     "gold": {
         "SBM.AX": [("2019-05-17", 0.42152), ("2023-07-06", 0.43527)],  # 2019 raise; Genesis in-specie 2023
         "ALK.AX": [("2019-08-14", 0.83129), ("2020-07-20", 0.95870)],  # 2019 raise; ASM demerger 2020
@@ -74,6 +75,7 @@ IGNORE_SPLITS = {"AAL.L"}
 DATASETS = {
     "majors": ("companies.csv", "raw", "mining_shares_2017_2026", None),
     "gold": ("companies_gold.csv", "raw_gold", "gold_miners_2017_2026", "manual_prices_gold.csv"),
+    "etf": ("companies_etf.csv", "raw_etf", "pick_etf_2017_2026", None),
 }
 DATASET = "majors"
 
