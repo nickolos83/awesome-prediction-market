@@ -2,18 +2,23 @@
 
 - `companies.csv`: maps each entity to its listed parent and Yahoo Finance ticker.
   Codelco, LKAB and Servicio Geológico Colombiano are state-owned or government bodies, so they have no shares.
-- `fetch_prices.py`: downloads daily prices from Yahoo Finance (via `yfinance`) and writes
-  `mining_shares_2017_2026.xlsx` with these sheets:
-  - **Year-end close**: one row per company, one column per year.
-  - **2y forward (by target yr)**: the price a 2-year future would have implied for that year, set two years earlier.
-    For example, the 2019 column is `close_2017 × e^((r − q)·2)`.
-  - **Detail**: open, high, low, close, average, dividends, rate, forward price, the actual price 2 years later and the forward error.
-  - **Analyst targets (now)**: today's 12-month consensus. Free sources don't keep historical targets.
+- `fetch_raw.py`: downloads daily prices, splits, FX and analyst targets into `raw/` (needs internet;
+  runs on GitHub Actions via `.github/workflows/mining-shares.yml` when this file or `companies.csv` changes).
+- `build_workbook.py`: builds `mining_shares_2017_2026.xlsx` from `raw/` (offline; needs pandas, openpyxl, pycel).
 
-```
-pip install yfinance pandas openpyxl
-python fetch_prices.py
-```
+Workbook tabs:
 
-Notes: prices are in the quote currency, and LSE prices are in pence (GBp). The forward price reflects carry
-(interest minus dividends) only. It is not a forecast. The 2-year yields in the script are approximate year-end values.
+| Tab | Content |
+|---|---|
+| Year-end close | Last close of each year in the trading currency (2026 = latest close). Highlighted cells were corrected; hover to see Yahoo's figure |
+| Year-end close USD | The same prices converted at the year-end FX rate (formulas) |
+| 2y forward | Price a 2-year future would have had, by target year: `close × e^((r − q)·2)` (formulas) |
+| 2y forward USD | Local forward ÷ 2-year FX forward (formulas) |
+| Dividend yield, Rates 2y, FX year-end, FX 2y forward | Inputs for the formulas. Rates are approximate; edit them and the workbook updates |
+| Detail | Open, high, low, close, average, dividends, forward, the actual price 2 years later and the forward error |
+| Analyst targets (now) | Today's 12-month consensus. Free sources don't keep historical targets |
+
+Prices are **as traded**. Yahoo rescales history after splits, bonus issues, stock dividends and demergers.
+The build undoes that: it uses Yahoo's split data plus the demerger factors in `HIDDEN_ADJUSTMENTS`
+(BHP–Woodside 2022, Anglo American–Thungela 2021 and Valterra 2025). LSE prices are in pence (GBp).
+The forward price reflects carry (interest minus dividends) only. It is not a forecast.
